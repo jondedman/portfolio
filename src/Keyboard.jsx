@@ -1,8 +1,8 @@
 import Key from "./Key";
 function keyboard() {
 	return (
-		<div className="flex m-auto p-4 pb-3 box-border bg-gray-300 w-3/4">
-			<div className="mt-4 ml-48">
+		<div className="flex justify-center m-auto p-4 pb-3 mb-4 box-border bg-gray-300 w-[1000px] rounded-xl shadow-2xl">
+			<div className="mt-4 ml-4 mr-4">
 				<div className="w-full h-16 mt-2.5">
 					<Key>`</Key>
 					<Key>1</Key>

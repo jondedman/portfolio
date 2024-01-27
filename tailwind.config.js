@@ -11,6 +11,26 @@ export default {
 			fontFamily: {
 				poppins: ["Poppins", "sans-serif"],
 			},
+			perspective: {
+				none: "none",
+				"1000": "1000px",
+			},
+			transform: ["hover", "focus"],
+			rotate: {
+				"0": "0",
+				"45": "45deg",
+				"90": "90deg",
+				"135": "135deg",
+				"180": "180deg",
+				"270": "270deg",
+				"360": "360deg",
+			},
+			backfaceVisibility: {
+				hidden: "hidden",
+			},
+			transformStyle: {
+				preserve: "preserve-3d",
+			},
 		},
 	},
 	variants: {
