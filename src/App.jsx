@@ -26,25 +26,9 @@ function App() {
 						<div className="col-start-4 row-start-4 col-span-1 row-span-1 bg-green-300 border-2 border-black p-2"></div>
 						<div className="col-start-4 row-start-3 col-span-1 row-span-1 bg-blue-300 border-2 border-black p-2"></div>
 						<div className="col-start-4 row-start-2 col-span-1 row-span-1 bg-green-300 border-2 border-black p-2"></div>
-						<div
-							className="col-start-2 row-start-2 col-span-2 row-span-4 border-2 border-black p-2"
-							style={{ perspective: "1000px" }}
-						>
-							<div
-								className="relative w-full h-full text-center"
-								style={{
-									transition: "transform 0.8s",
-									transformStyle: "preserve-3d",
-								}}
-								onMouseEnter={(e) =>
-									(e.currentTarget.style.transform = "rotateY(180deg)")
-								}
-								onMouseLeave={(e) => (e.currentTarget.style.transform = "")}
-							>
-								<div
-									className="bg-gray-400 text-black absolute w-full h-full"
-									style={{ backfaceVisibility: "hidden" }}
-								>
+						<div className="col-start-2 row-start-2 col-span-2 row-span-4 border-2 border-black p-2 flip-card">
+							<div className="flip-card-inner">
+								<div className="bg-gray-400 text-black flip-card-front">
 									<img
 										src="/profile.jpg"
 										alt="profile pic"
@@ -52,13 +36,7 @@ function App() {
 									/>
 								</div>
 
-								<div
-									className="bg-blue-500 text-white absolute w-full h-full"
-									style={{
-										transform: "rotateY(180deg)",
-										backfaceVisibility: "hidden",
-									}}
-								>
+								<div className="bg-blue-500 text-white flip-card-back">
 									<h1>Jon Placeholder</h1>
 									<p>blah</p>
 									<p>more blah</p>

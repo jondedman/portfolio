@@ -15,7 +15,6 @@ export default {
 				none: "none",
 				"1000": "1000px",
 			},
-			transform: ["hover", "focus"],
 			rotate: {
 				"0": "0",
 				"45": "45deg",
@@ -37,6 +36,8 @@ export default {
 		extend: {
 			scale: ["active"],
 			boxShadow: ["active"],
+			transform: ["hover", "focus"],
+			transformStyle: ["hover", "focus"],
 		},
 	},
 	plugins: [],
