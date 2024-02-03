@@ -30,6 +30,10 @@ export default {
 			transformStyle: {
 				preserve: "preserve-3d",
 			},
+			colors: {
+				"monopoly-green": "#96C795",
+				"background-color": "#F5EDDB",
+			},
 		},
 	},
 	variants: {

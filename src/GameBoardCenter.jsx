@@ -2,6 +2,9 @@
 import "./GameboardCenter.css";
 import Experience from "./CV/Experience";
 import Education from "./CV/Education";
+import Stack from "./CV/Stack";
+import Jaipur from "./CV/Jaipur";
+import WhatCanIEat from "./CV/WhatCanIEat";
 
 function GameBoardCenter({ isFlipped, backContent }) {
 	let content;
@@ -13,13 +16,21 @@ function GameBoardCenter({ isFlipped, backContent }) {
 		case "education":
 			content = <Education />;
 			break;
-		// Add more cases as needed...
+		case "stack":
+			content = <Stack />;
+			break;
+		case "jaipur":
+			content = <Jaipur />;
+			break;
+		case "what can i eat":
+			content = <WhatCanIEat />;
+			break;
 		default:
 			content = null;
 	}
 	return (
 		<div
-			className={`col-start-2 row-start-2 col-span-2 row-span-4 border-2 border-black p-2 flip-card ${
+			className={`col-start-2 row-start-2 col-span-2 row-span-2  p-2 flip-card ${
 				isFlipped ? "flipped" : ""
 			}`}
 		>
