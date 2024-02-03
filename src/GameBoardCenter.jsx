@@ -36,15 +36,17 @@ function GameBoardCenter({ isFlipped, backContent }) {
 		>
 			{/* <div className="flip-card"> */}
 			<div className="flip-card-inner">
-				<div className="bg-gray-400 text-black flip-card-front">
+				<div className="bg-gray-400 text-black flip-card-front rounded-2xl">
 					<img
 						src="/profile.jpg"
 						alt="profile pic"
-						className="object-cover w-full h-full"
+						className="object-cover w-full h-full rounded-2xl shadow-[15px_30px_20px_20px_#00000024]"
 					/>
 				</div>
 
-				<div className="bg-blue-500 text-white flip-card-back">{content}</div>
+				<div className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-[15px_30px_20px_20px_#00000024]">
+					{content}
+				</div>
 			</div>
 			{/* </div> */}
 		</div>
