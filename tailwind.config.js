@@ -5,8 +5,7 @@ export default {
 	theme: {
 		extend: {
 			boxShadow: {
-				custom: "5px 5px 10px #474343, -5px -5px 10px #fff",
-				active: "1px 1px 1px 2px #fff8f8, -1px -1px 2px #474343",
+				custom: "4px 4px 8px 8px #00000024",
 			},
 			fontFamily: {
 				poppins: ["Poppins", "sans-serif"],

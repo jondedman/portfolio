@@ -30,7 +30,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 	}
 	return (
 		<div
-			className={`col-start-2 row-start-2 col-span-2 row-span-2  p-2 flip-card ${
+			className={`col-start-2 row-start-2 col-span-2 row-span-2 flip-card ${
 				isFlipped ? "flipped" : ""
 			}`}
 		>
@@ -40,11 +40,11 @@ function GameBoardCenter({ isFlipped, backContent }) {
 					<img
 						src="/profile.jpg"
 						alt="profile pic"
-						className="object-cover w-full h-full rounded-2xl shadow-[15px_30px_20px_20px_#00000024]"
+						className="object-cover w-full h-full rounded-2xl shadow-custom"
 					/>
 				</div>
 
-				<div className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-[15px_30px_20px_20px_#00000024]">
+				<div className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-custom">
 					{content}
 				</div>
 			</div>
