@@ -32,6 +32,7 @@ export default {
 			colors: {
 				"monopoly-green": "#96C795",
 				"background-color": "#F5EDDB",
+				"banner-color": "#241A15",
 			},
 		},
 	},

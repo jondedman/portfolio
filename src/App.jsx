@@ -7,13 +7,13 @@ function App() {
 	// const [count, setCount] = useState(0);
 
 	return (
-		<>
-			<div className="flex items-center justify-center w-screen h-screen">
-				<div className="flex items-center justify-center h-2/3 w-5/6 lg:h-3/4 lg:w-1/2">
-					<GameBoard />
-				</div>
+		<div className="w-full h-full bg-background-color">
+			<div className="bg-banner-color h-[10vh] w-full"></div>
+			<div className="flex items-center justify-center h-[calc(100vh - 15vh)] mx-auto w-3/4 bg-background-color">
+				<GameBoard />
 			</div>
-		</>
+			<div className="bg-banner-color h-[5vh] w-full"></div>
+		</div>
 	);
 }
 
