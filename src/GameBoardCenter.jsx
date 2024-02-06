@@ -30,7 +30,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 	}
 	return (
 		<div
-			className={`col-start-2 row-start-2 col-span-2 row-span-2 flip-card ${
+			className={`col-start-2 row-start-1 col-span-2 row-span-3 h-5/6 w-5/6 mx-auto my-auto flip-card ${
 				isFlipped ? "flipped" : ""
 			}`}
 		>

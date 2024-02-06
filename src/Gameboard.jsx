@@ -31,20 +31,20 @@ function GameBoard() {
 					<li>Twitter</li>
 				</ul>
 			</div> */}
-			<div className="col-start-1 row-start-1 col-span-4 row-span-1 border-2 border-back p-2">
-				{/* <h1 className="text-3xl ">Jon Dedman portfolio</h1> */}
-				<div className="justify-center">
+			{/* <div className="col-start-1 row-start-1 col-span-4 row-span-1 border-2 border-back p-2"> */}
+			{/* <h1 className="text-3xl ">Jon Dedman portfolio</h1> */}
+			{/* <div className="justify-center">
 					<h1 className=" font-poppins opacity-75 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center mb-1">
 						JON DEDMAN
 					</h1>
-				</div>
-				<Instructions />
-			</div>
+				</div> */}
+			<Instructions />
+			{/* </div> */}
 			{/* <div className="col-start-4 row-start-1 col-span-1 row-span-1">
 				<h1>CV</h1>
 			</div> */}
 
-			<div className="col-start-4 row-start-2 col-span-1 row-span-1 h-full w-full flex justify-start items-start">
+			<div className="col-start-4 row-start-1 col-span-1 row-span-1 h-full w-full flex justify-end items-end">
 				<div
 					className="h-3/4 w-3/4 mx-auto"
 					onClick={() => handleClick("jaipur")}
@@ -59,7 +59,7 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="col-start-1 row-start-2 col-span-1 row-span-1 h-full w-full flex justify-end items-start">
+			<div className="col-start-1 row-start-1 col-span-1 row-span-1 h-full w-full flex justify-end items-end">
 				<div
 					onClick={() => handleClick("jaipur")}
 					className="h-3/4 w-3/4 mx-auto"
@@ -73,7 +73,7 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="col-start-1 row-start-3 col-span-1 row-span-1 h-full w-full flex justify-end items-end">
+			<div className="col-start-1 row-start-3 col-span-1 row-span-1 h-full w-full flex justify-start items-start">
 				<div
 					onClick={() => handleClick("jaipur")}
 					className="h-3/4 w-3/4 mx-auto"
@@ -87,7 +87,7 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="col-start-4 row-start-3 col-span-1 row-span-1 h-full w-full flex justify-start items-end">
+			<div className="col-start-4 row-start-3 col-span-1 row-span-1 h-full w-full flex justify-start items-start">
 				<div
 					className="h-3/4 w-3/4 mx-auto"
 					onClick={() => handleClick("what can i eat")}
