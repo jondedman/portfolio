@@ -15,7 +15,7 @@ function GameBoard() {
 	};
 	return (
 		<div
-			className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color xs:gap-1"
+			className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color xs:gap-2"
 			// className="grid grid-cols-4 grid-rows-3 gap-6 p-4 border-1 border-black h-full w-full bg-gradient-to-r from-monopoly-green to-green-300 rounded-lg shadow-lg"
 			// style={{
 			// 	backgroundImage: `url(${backgroundImage})`,
@@ -44,9 +44,9 @@ function GameBoard() {
 				<h1>CV</h1>
 			</div> */}
 
-			<div className="md:col-start-4 md:row-start-1 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-end md:items-end xs:justify-start xs:items-center ">
+			<div className="md:col-start-4 md:row-start-1 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-start md:items-end xs:justify-start xs:items-center ">
 				<div
-					className="md:h-3/4 md:w-1/2 md:mx-auto xs:w-full xs:h-1/2 xs:mx-0"
+					className="md:h-3/4 md:w-1/2 xs:w-full xs:h-1/2 xs:mx-0"
 					onClick={() => handleClick("jaipur")}
 					// className="col-start-4 row-start-2 col-span-1 row-span-1 h-3/4 w-3/4 rounded-2xl shadow-custom "
 				>
@@ -61,8 +61,8 @@ function GameBoard() {
 
 			<div className="md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-end md:items-end xs:justify-start xs:items-center">
 				<div
-					onClick={() => handleClick("jaipur")}
-					className="md:h-3/4 md:w-1/2 md:mx-auto xs:w-full xs:h-1/2 xs:mx-0"
+					onClick={() => handleClick("rda")}
+					className="md:h-3/4 md:w-1/2 xs:w-full xs:h-1/2 xs:mx-0"
 				>
 					<img
 						src="rda.jpg"
@@ -73,10 +73,10 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="md:col-start-1 md:row-start-3 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-start md:items-start xs:col-start-2 xs:row-start-1 xs:justify-end xs:items-center">
+			<div className="md:col-start-1 md:row-start-3 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-end md:items-start xs:col-start-2 xs:row-start-1 xs:justify-end xs:items-center">
 				<div
-					onClick={() => handleClick("jaipur")}
-					className="md:h-3/4 md:w-1/2 md:mx-auto xs:w-full xs:h-1/2 xs:mx-0"
+					onClick={() => handleClick("pnp")}
+					className="md:h-3/4 md:w-1/2 xs:w-full xs:h-1/2 xs:mx-0"
 				>
 					<img
 						src="pay_and_play.jpg"
@@ -89,7 +89,7 @@ function GameBoard() {
 
 			<div className="md:col-start-4 md:row-start-3 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-start md:items-start xs:col-start-3 xs:row-start-1 xs:justify-end xs:items-center">
 				<div
-					className="md:h-3/4 md:w-1/2 md:mx-auto xs:w-full xs:h-1/2 xs:mx-0"
+					className="md:h-3/4 md:w-1/2 xs:w-full xs:h-1/2 xs:mx-0"
 					onClick={() => handleClick("what can i eat")}
 				>
 					<img
@@ -102,7 +102,7 @@ function GameBoard() {
 			</div>
 			<div
 				className="md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-3 md:h-5/6 md:w-5/6 md:mx-auto md:my-auto xs:h-full xs:w-full xs:row-start-2 xs:row-span-2 xs:col-span-4 flip-card"
-				onClick={() => handleClick("what can i eat")}
+				onClick={() => handleClick("cv")}
 			>
 				<GameBoardCenter isFlipped={isFlipped} backContent={backContent} />
 			</div>
