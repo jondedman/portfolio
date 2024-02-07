@@ -29,7 +29,7 @@ function Instructions() {
 	}, [charIndex, isDeleting, wordIndex, words]);
 
 	return (
-		<div className="flex justify-center items-end">
+		<div className="flex justify-center items-end min-h-[5vh]">
 			<h1 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
 				{currentText}
 			</h1>
