@@ -15,7 +15,7 @@ function GameBoard() {
 	};
 	return (
 		<div
-			className="grid grid-cols-4 grid-rows-3 gap-4 py-8 px-8 border-1 border-black h-screen w-full bg-background-color xs:gap-1"
+			className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color xs:gap-1"
 			// className="grid grid-cols-4 grid-rows-3 gap-6 p-4 border-1 border-black h-full w-full bg-gradient-to-r from-monopoly-green to-green-300 rounded-lg shadow-lg"
 			// style={{
 			// 	backgroundImage: `url(${backgroundImage})`,
@@ -100,8 +100,12 @@ function GameBoard() {
 					/>
 				</div>
 			</div>
-
-			<GameBoardCenter isFlipped={isFlipped} backContent={backContent} />
+			<div
+				className="md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-3 md:h-5/6 md:w-5/6 md:mx-auto md:my-auto xs:h-full xs:w-full xs:row-start-2 xs:row-span-2 xs:col-span-4 flip-card"
+				onClick={() => handleClick("what can i eat")}
+			>
+				<GameBoardCenter isFlipped={isFlipped} backContent={backContent} />
+			</div>
 			{/* </div> */}
 		</div>
 	);

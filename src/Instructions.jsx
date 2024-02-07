@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Instructions() {
-	const words = ["Click on the CV or one of the projects to find out more."];
+	const words = ["Click my picture or one of the projects to find out more"];
 	const [currentText, setCurrentText] = useState("");
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [wordIndex, setWordIndex] = useState(0);
@@ -29,7 +29,7 @@ function Instructions() {
 	}, [charIndex, isDeleting, wordIndex, words]);
 
 	return (
-		<div className="flex justify-center items-end min-h-[5vh]">
+		<div className="flex justify-center items-end min-h-[5vh] xs:mt-0 md:mt-4">
 			<h1 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
 				{currentText}
 			</h1>
