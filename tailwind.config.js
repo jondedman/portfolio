@@ -4,6 +4,10 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
+			screens: {
+				xs: "320px",
+				// ...
+			},
 			boxShadow: {
 				custom: "4px 4px 8px 8px #00000024",
 			},
