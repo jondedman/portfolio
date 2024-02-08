@@ -30,7 +30,7 @@ function Instructions() {
 
 	return (
 		<div className="flex justify-center items-end min-h-[5vh] xs:mt-0 md:mt-4 mb-1">
-			<h1 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
+			<h1 className="h-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-center">
 				{currentText}
 			</h1>
 		</div>
