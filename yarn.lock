@@ -218,6 +218,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@emailjs/browser@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-4.1.0.tgz#141225969a2abfa1ec6e6f3240b3637a78cace16"
+  integrity sha512-AWLTmFli2NIKjBXs4Fql1B5z8i3W2r+CKCaxp0DdcFzcIQxrCS2TzmqJtIiPZKh9FpZgqueQTivBx6QOxaz89Q==
+
 "@esbuild/aix-ppc64@0.19.12":
   version "0.19.12"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.19.12.tgz#d1bc06aedb6936b3b6d313bf809a5a40387d2b7f"

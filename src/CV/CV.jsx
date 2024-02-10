@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ContactMe from "../ContactMe";
 
 function Cv() {
 	const [openSection, setOpenSection] = useState(null);
@@ -23,6 +24,7 @@ function Cv() {
 			</div>
 			<div>
 				<h2 className="text-left my-2 font-bold">Contact</h2>
+				<ContactMe />
 				<div className="flex justify-start">
 					<ul className="text-left mb-2">
 						<li>+44 07932563406</li>
