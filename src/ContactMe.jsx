@@ -16,6 +16,7 @@ export const ContactMe = () => {
 			.then(
 				() => {
 					console.log("SUCCESS!");
+					form.current.reset();
 				},
 				(error) => {
 					console.log("FAILED...", error.text);
@@ -24,14 +25,35 @@ export const ContactMe = () => {
 	};
 
 	return (
-		<form ref={form} onSubmit={sendEmail}>
-			<label>Name</label>
-			<input type="text" name="user_name" className="text-black" />
-			<label>Email</label>
-			<input type="email" name="user_email" className="text-black" />
-			<label>Message</label>
-			<textarea name="message" className="text-black" />
-			<input type="submit" value="Send" />
+		<form
+			ref={form}
+			onSubmit={sendEmail}
+			className="border border-1 my-4 rounded-lg"
+		>
+			<div className="flex justify-start m-2">
+				<label className="m-1">Name:</label>
+				<input
+					type="text"
+					name="user_name"
+					className="text-black m-2 rounded-lg"
+				/>
+				<label className="m-1">Email:</label>
+				<input
+					type="email"
+					name="user_email"
+					className="text-black m-2 rounded-lg"
+				/>
+			</div>
+			<div className="flex justify-center items-center">
+				{/* <label className="m-1">Message:</label> */}
+				<textarea
+					name="message"
+					className="text-black m-2 rounded-lg w-full h-full"
+				/>
+			</div>
+			<button className="border border-2 p-2 rounded-lg my-2">
+				<input type="submit" value="Send" />
+			</button>
 		</form>
 	);
 };

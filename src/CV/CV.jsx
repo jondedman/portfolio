@@ -22,18 +22,10 @@ function Cv() {
 					Download CV
 				</a>
 			</div>
+
 			<div>
 				<h2 className="text-left my-2 font-bold">Contact</h2>
 				<ContactMe />
-				<div className="flex justify-start">
-					<ul className="text-left mb-2">
-						<li>+44 07932563406</li>
-						<li>jonathandedman@hotmail.com</li>
-						<li>https://github.com/jondedman </li>
-						<li>linkedin.com/in/jon-dedman</li>
-						<li>location: London/remote </li>
-					</ul>
-				</div>
 			</div>
 			<h2
 				className="mb-2 text-left cursor-pointer font-bold"
