@@ -4,6 +4,7 @@ function Cv() {
 	const [openSection, setOpenSection] = useState(null);
 
 	const toggleSection = (section) => {
+		// event.stopPropagation();
 		setOpenSection(openSection === section ? null : section);
 	};
 
@@ -15,13 +16,13 @@ function Cv() {
 					href="Developer CV.pdf"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="text-decoration-underlined"
+					className="underline"
 				>
 					Download CV
 				</a>
 			</div>
-			<div className="border-2 border-black">
-				<h2 className="text-left my-2">Contact</h2>
+			<div>
+				<h2 className="text-left my-2 font-bold">Contact</h2>
 				<div className="flex justify-start">
 					<ul className="text-left mb-2">
 						<li>+44 07932563406</li>
@@ -34,7 +35,7 @@ function Cv() {
 			</div>
 			<h2
 				className="mb-2 text-left cursor-pointer font-bold"
-				onMouseEnter={() => toggleSection("Profile")}
+				onClick={() => toggleSection("Profile")}
 			>
 				Profile
 			</h2>
@@ -55,7 +56,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Technical Skills")}
+					onClick={() => toggleSection("Technical Skills")}
 				>
 					Technical skills
 				</h2>
@@ -79,7 +80,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Other Skills")}
+					onClick={() => toggleSection("Other Skills")}
 				>
 					Other skills
 				</h2>
@@ -102,7 +103,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Recent roles")}
+					onClick={() => toggleSection("Recent roles")}
 				>
 					Recent roles
 				</h2>
@@ -171,7 +172,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Work history")}
+					onClick={() => toggleSection("Work history")}
 				>
 					Work history
 				</h2>
@@ -229,7 +230,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Older roles")}
+					onClick={() => toggleSection("Older roles")}
 				>
 					Older roles prior to 2005
 				</h2>
@@ -263,7 +264,7 @@ function Cv() {
 			<div>
 				<h2
 					className="mb-2 text-left cursor-pointer font-bold"
-					onMouseEnter={() => toggleSection("Education")}
+					onClick={() => toggleSection("Education")}
 				>
 					Education
 				</h2>

@@ -9,9 +9,10 @@ function GameBoard() {
 	const [isFlipped, setIsFlipped] = useState(false);
 	const [backContent, setBackContent] = useState("");
 	const handleClick = (content) => {
-		console.log("clicked");
+		console.log("clicked in gameboard");
 		setIsFlipped(!isFlipped);
 		setBackContent(content);
+		console.log(backContent);
 	};
 	return (
 		<div
@@ -106,7 +107,6 @@ function GameBoard() {
 			>
 				<GameBoardCenter isFlipped={isFlipped} backContent={backContent} />
 			</div>
-			{/* </div> */}
 		</div>
 	);
 }

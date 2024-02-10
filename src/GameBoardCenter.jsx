@@ -12,6 +12,11 @@ import Cv from "./CV/CV";
 function GameBoardCenter({ isFlipped, backContent }) {
 	let content;
 
+	const handleClick = (event) => {
+		event.stopPropagation();
+		// Add any additional click handling code here
+	};
+
 	switch (backContent) {
 		case "experience":
 			content = <Experience />;
@@ -56,7 +61,10 @@ function GameBoardCenter({ isFlipped, backContent }) {
 					/>
 				</div>
 
-				<div className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-custom">
+				<div
+					onClick={handleClick}
+					className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-custom"
+				>
 					{content}
 				</div>
 			</div>
