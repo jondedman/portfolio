@@ -25,11 +25,7 @@ export const ContactMe = () => {
 	};
 
 	return (
-		<form
-			ref={form}
-			onSubmit={sendEmail}
-			className="border border-1 my-4 rounded-lg"
-		>
+		<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3">
 			<div className="flex justify-start m-2">
 				<label className="m-1">Name:</label>
 				<input
@@ -44,14 +40,14 @@ export const ContactMe = () => {
 					className="text-black m-2 rounded-lg"
 				/>
 			</div>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center h-1/2">
 				{/* <label className="m-1">Message:</label> */}
 				<textarea
 					name="message"
 					className="text-black m-2 rounded-lg w-full h-full"
 				/>
 			</div>
-			<button className="border border-2 p-2 rounded-lg my-2">
+			<button className="border border-2 p-2 rounded-lg mt-2">
 				<input type="submit" value="Send" />
 			</button>
 		</form>
