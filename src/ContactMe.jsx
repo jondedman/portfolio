@@ -26,7 +26,7 @@ export const ContactMe = () => {
 
 	return (
 		<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3">
-			<div className="flex justify-start m-2">
+			<div className="md:flex md:justify-start md:m-2">
 				<label className="m-1">Name:</label>
 				<input
 					type="text"
