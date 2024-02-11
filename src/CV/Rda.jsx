@@ -14,7 +14,10 @@ function Rda() {
 			</p>
 
 			<h2>Stack used</h2>
-			<p>JavaScript, React.js, Node.js (with Express.js), and PostgreSQL</p>
+			<p>
+				JavaScript, React.js, Node.js (with Express.js), and PostgreSQL, Heroku
+			</p>
+
 			<h3>Libraries</h3>
 			{/* make sure this is complete */}
 			<p>
