@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-import "./GameboardCenter.css";
+import "./GameBoardCenter.css";
 import Experience from "./CV/Experience";
 import Education from "./CV/Education";
 import Stack from "./CV/Stack";
