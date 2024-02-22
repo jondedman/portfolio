@@ -27,16 +27,11 @@ function Cv() {
 						<h2 className="mb-2 text-left cursor-pointer font-bold">Profile</h2>
 						{openSection === "Profile" && (
 							<p className="text-left">
-								Aspiring software engineer with a strong foundation in
-								problem-solving and a demonstrated aptitude for coding in Ruby
-								JavaScript, and Python while also building full-stack
-								applications with Ruby on Rails and the PERN (PostgreSQL,
-								Express, React, Node.js) stack. Passionate about contributing to
-								impactful projects and delivering innovative solutions. A
-								collaborative team player eager to embrace emerging technologies
-								and continuously expand my skill set. Committed to crafting
-								secure, user-centered software and driving positive outcomes in
-								a dynamic and evolving tech landscape.
+								Aspiring software engineer skilled in Ruby, JavaScript, and
+								Python, experienced in building full-stack applications with
+								Ruby on Rails and the PERN stack. A collaborative team player,
+								passionate about user- centered projects and delivering
+								innovative solutions.
 							</p>
 						)}
 					</>
@@ -106,44 +101,34 @@ function Cv() {
 								<ul>
 									<li>
 										{" "}
-										Spearheaded the end-to-end design, development, and
-										implementation of a bespoke full-stack PERN booking system
-										for a bustling garage.
+										In collaboration with stakeholders, leveraged JavaScript,
+										React.js, Node.js (with Express.js), and PostgreSQL to
+										architect a robust and user-friendly interface for seamless
+										booking management.
 									</li>
 									<li>
 										{" "}
-										Collaborated closely with stakeholders to identify
-										requirements, resulting in a tailor-made solution that
-										streamlined booking processes and enhanced customer
-										experiences.
+										Client attributed a 10% revenue increase in the first two
+										months to reduced booking errors and improved usability.
 									</li>
 									<li>
 										{" "}
-										Leveraged JavaScript, React.js, Node.js (with Express.js),
-										and PostgreSQL to architect a robust and user- friendly
-										interface for seamless booking management.
-									</li>
-									<li>
-										{" "}
-										Demonstrated exceptional problem-solving abilities,
-										addressing technical challenges and optimizing system
-										performance to exceed client expectations.
+										Exceeded client expectations by implementing a reporting
+										system using AG-grid and ensuring scalability for future
+										client-facing applications.
 									</li>
 								</ul>
 								<br />
 								<ul>
+									<li>IT Support Specialist | Dates: 01/05/2023 - present</li>
 									<li>
-										IT Support Specialist | Amaya | Dates: 01/05/2023 - present
+										Cleaned and refactored machine learning (Python) code to
+										work in the production environment within the mental health
+										domain for Dr. Ive at Queen Mary University.
 									</li>
 									<li>
-										Provided comprehensive IT support, troubleshooting, and
-										issue resolution for Amaya Automated headless browser using
-										puppeteer and node.js to provide data solution to enable
-										database of contacts.
-									</li>
-									<li>
-										Managed and maintained the company’s website, ensuring
-										optimal performance and functionality.
+										Utilised Puppeteer and Node.js to reduce time for mail-out
+										for artist Amaya from two months to two days.
 									</li>
 									<li>
 										Developed and implemented a robust social media strategy,
@@ -151,8 +136,8 @@ function Cv() {
 										platforms.
 									</li>
 									<li>
-										Streamlined all aspects of commercial artists administration
-										and social media.
+										Increased artists Instagram following by 4000 followers by
+										using a Python and Selenium script.
 									</li>
 								</ul>
 							</ul>
@@ -171,50 +156,29 @@ function Cv() {
 						</h2>
 						{openSection === "Work history" && (
 							<ul className="text-left">
-								<li>Freelance tutor, freelance editor Dates: 2007 - present</li>
+								<li>Tutor, Editor | Freelance | Dates: 2007 - present</li>
 								<ul>
 									<li>
-										Entrepreneurial Management | 16+ Years Effectively
-										orchestrated and managed all facets of two thriving
-										freelance enterprises, showcasing adept organizational
-										prowess and entrepreneurial acumen.
-									</li>
-									<li>
-										Educator and Communicator Demonstrated exceptional
-										communication skills as an educator, fostering engaged and
-										interactive learning environments that facilitated enhanced
-										knowledge retention and student success.
-									</li>
-									<li>
-										Meticulous Freelance Editor Exercised a keen eye for detail
-										and precision in delivering freelance editorial services,
-										ensuring the highest quality in written content and meeting
-										client expectations.
+										Managed all facets of two thriving freelance enterprises,
+										showcasing adept project management, organisational and
+										communication skills, including, as an editor, a meticulous
+										eye for detail.
 									</li>
 								</ul>
 								<br />
 								<li>Administrator| NCVO | Dates: 2006 -2007</li>
 								<ul>
 									<li>
-										Managing and resolving budget to ensure the continued
-										operations of the Infrastructure NationalPartnership.
-										Ensuring seemless communication between high-profile MPs,
-										public figures and NCVO staff Processing of complex
-										technical information into readable minutes for all
-										stakeholders.
+										Managing and resolving budget. Relating of complex
+										information to stakeholders at all levels.
 									</li>
 								</ul>
 								<br />
 								<li>Administrator | IOE | Dates: 2005 -2008</li>
 								<ul>
 									<li>
-										Website Management | Institute of Education Leveraged
-										Dreamweaver to oversee and meticulously manage the website
-										at the Institute of Education, ensuring an intuitive user
-										experience and up-to-date content delivery while
-										contributing to the institute's online presence. Proactively
-										created reports on admission statistics to support the work
-										of the registry.
+										Website Management at Institute of Education - leveraging
+										Dreamweaver.
 									</li>
 								</ul>
 							</ul>
