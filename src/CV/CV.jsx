@@ -2,8 +2,19 @@ import ContactMe from "../ContactMe";
 import ToggleSection from "../ToggleSection";
 
 function Cv() {
+	const handleClick = (event) => {
+		console.log("clicked in cv");
+		event.stopPropagation();
+		console.log("clicked in cv after stopPropagation");
+	};
+
+	// const preventBubble = (event) => {
+	// 	console.log("preventing bubble");
+	// 	event.stopPropagation();
+	// };
+
 	return (
-		<div className="overflow-auto h-full p-6">
+		<div className="overflow-auto h-full p-6" onClick={handleClick}>
 			<h1 className="mb-4 font-bold">CV</h1>
 			<div>
 				<a

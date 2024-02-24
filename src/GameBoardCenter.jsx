@@ -9,12 +9,20 @@ import WhatCanIEat from "./CV/WhatCanIEat";
 import PayAndPlay from "./CV/PayAndPlay";
 import Cv from "./CV/CV";
 
+import PropTypes from "prop-types";
+
 function GameBoardCenter({ isFlipped, backContent }) {
 	let content;
 
-	const handleClick = (event) => {
+	// const handleClick = (event) => {
+	// 	event.stopPropagation();
+	// 	console.log("clicked in gameboardcenter");
+	// 	// Add any additional click handling code here
+	// };
+
+	const handleChildClick = (event) => {
 		event.stopPropagation();
-		// Add any additional click handling code here
+		// rest of your code for this specific child element
 	};
 
 	switch (backContent) {
@@ -47,6 +55,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 	}
 	return (
 		<div
+			// onClick={handleChildClick}
 			className={`md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-3 md:h-full md:w-5/6 md:mx-auto md:my-auto xs:h-full xs:w-full xs:row-start-2 xs:row-span-2 xs:col-span-4 flip-card ${
 				isFlipped ? "flipped" : ""
 			}`}
@@ -61,10 +70,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 					/>
 				</div>
 
-				<div
-					onClick={handleClick}
-					className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-custom"
-				>
+				<div className="bg-blue-500 text-white flip-card-back rounded-2xl shadow-custom">
 					{content}
 				</div>
 			</div>
@@ -74,3 +80,8 @@ function GameBoardCenter({ isFlipped, backContent }) {
 }
 
 export default GameBoardCenter;
+
+GameBoardCenter.propTypes = {
+	isFlipped: PropTypes.bool.isRequired,
+	backContent: PropTypes.string.isRequired,
+};

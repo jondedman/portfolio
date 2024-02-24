@@ -1,8 +1,17 @@
 import ToggleSection from "../ToggleSection";
 
 function Rda() {
+	const handleClick = (event) => {
+		event.stopPropagation();
+		console.log("clicked in rda");
+		// Add any additional click handling code here
+	};
 	return (
-		<div className="overflow-y-auto h-full w-full p-6">
+		<div
+			className="overflow-y-auto h-full w-full p-6"
+			onClick={handleClick}
+			onMouseDown={handleClick}
+		>
 			<h1 className="font-bold">
 				RD Autos Booking System
 				<a
