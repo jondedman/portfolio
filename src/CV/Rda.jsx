@@ -56,15 +56,16 @@ function Rda() {
 					<>
 						<h2 className="font-bold my-2">User story 1</h2>
 						{openSection === "User story 1" && (
-							<iframe
-								width="560"
-								height="315"
-								src="https://www.youtube.com/embed/RHNXrbAxz2c"
-								title="YouTube video player"
-								frameBorder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowFullScreen
-							></iframe>
+							<div className="relative pt-56 flex justify-center items-center">
+								<iframe
+									className="absolute top-0 w-full h-full pb-3"
+									src="https://www.youtube.com/embed/RHNXrbAxz2c"
+									title="YouTube video player"
+									frameBorder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowFullScreen
+								></iframe>
+							</div>
 						)}
 					</>
 				)}

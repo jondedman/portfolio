@@ -12,6 +12,7 @@ const ToggleSection = ({ section, children }) => {
 	return (
 		<button
 			ref={buttonRef}
+			className="w-full"
 			style={{
 				cursor: "pointer",
 				background: openSection === section ? "#F5EDDB" : "none",
