@@ -22,8 +22,7 @@ const ToggleSection = ({ section, children }) => {
 				color: openSection === section ? "black" : "inherit",
 				borderRadius: openSection === section ? "0.5rem" : "none",
 			}}
-			onMouseDown={toggleSection}
-			onTouchStart={toggleSection}
+			onClick={toggleSection}
 		>
 			{children(openSection)}
 		</button>
