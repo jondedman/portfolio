@@ -4,10 +4,10 @@ import emailjs from "@emailjs/browser";
 const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
 export const ContactMe = () => {
-	const handleClick = (event) => {
-		event.stopPropagation();
-		// event.preventDefault();
-	};
+	// const handleClick = (event) => {
+	// 	event.stopPropagation();
+	// 	// event.preventDefault();
+	// };
 	const form = useRef();
 
 	const sendEmail = (e) => {
@@ -29,8 +29,8 @@ export const ContactMe = () => {
 	};
 
 	return (
-		<div onMouseDown={handleClick} onTouchStart={handleClick}>
-			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3">
+		<div>
+			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3  ">
 				<div className="md:flex md:justify-start md:m-2">
 					<label className="m-1">Name:</label>
 					<input
