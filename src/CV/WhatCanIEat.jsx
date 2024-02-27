@@ -13,12 +13,12 @@ function WhatCanIEat() {
 			onMouseDown={handleClick}
 		>
 			<a
-				href="https://github.com/jondedman/Jaipur"
+				href="https://github.com/jondedman/what-can-i-eat"
 				target="_blank"
 				rel="noreferrer"
-				className="underline active:text-blue active:font-bold"
+				className="underline active:text-blue active:font-bold text-bold"
 			>
-				<span className="font-bold">What Can I Eat!?</span>
+				What Can I Eat!?
 				<svg
 					className="h-6 w-6 inline-block ml-2"
 					xmlns="http://www.w3.org/2000/svg"
@@ -30,15 +30,121 @@ function WhatCanIEat() {
 					/>
 				</svg>
 			</a>{" "}
+			<br />
+			<br />
 			<a
 				className="text-white underline"
 				href="http://www.whatcanieat.world"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				What Can I Eat
+				What Can I Eat!? - see it live on Heroku
 			</a>
-			<p>Link to Github</p>
+			<ToggleSection section="Brief">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Brief</h2>
+						{openSection === "Brief" && (
+							<>
+								<p>
+									What can I eat!? was the final collaborative project with my
+									wonderful friends{" "}
+									<a
+										href="https://github.com/fransan6"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Francesca Sandford
+									</a>
+									,{" "}
+									<a
+										href="https://github.com/alexagodzilla"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Alessandro Agozzino
+									</a>{" "}
+									and{" "}
+									<a
+										href="https://github.com/ilariaperoni"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Ilaria Peroni
+									</a>
+									. I have forked a copy of the original project from my github
+									repo. The original project was built over several months in
+									Ruby on Rails and then deployed to Heroku.
+								</p>
+
+								<p>
+									What can I eat!? is a web application that allows users to
+									make use of left-over ingredients in their fridge. The app
+									allows users to search for recipes based on the ingredients
+									they have. The app also allows users to save recipes to their
+									profile. The app needed to be visually appealing and provide a
+									good user experience. The app also needed to be deployed on
+									Heroku. It was my idea to add a social aspect to the app: uers
+									would be able to see the contents of each others pantries and
+									fridges, and then meet in a chatroom to discuss what they
+									could make together. My responsibilities on this project
+									included the integration of the Spoonacular API, and using
+									this to seed the app with data to create an MVP. I also
+									contributed to the Front end design of the show pages. In
+									addition i researched and impleented the ful text search
+									functionality using the pg_search gem.
+								</p>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Stack used">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Stack used</h2>
+						{openSection === "Stack used" && (
+							<ul>
+								<li>Ruby on Rails</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>PostgreSQL</li>
+								<li>Heroku</li>
+								<li>Spoonacular API</li>
+								<li>pg_search gem</li>
+								<li>Bootstrap</li>
+							</ul>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Challenges">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Challenges</h2>
+						{openSection === "Challenges" && (
+							<p>
+								Finding an appropriate API was a challenge. The Spoonacular API
+								was chosen because it was free and had a good range of recipes.
+								The API was also easy to use and had good documentation. The API
+								was used to seed the app with data. The data was stored in JSONS
+								and then imported into the database. The biggest challenge was
+								the full text search functionality. I had to research and
+								implement the pg_search gem. This was a challenge because it was
+								the first time I had used this gem. After researching the
+								different options, i decided that PGsearch was going o be the
+								quickest and most lightweight option to implement. The app culd
+								be further improved by sourcing better recipes and improving the
+								front-end to make it fully responsive.
+							</p>
+						)}
+					</>
+				)}
+			</ToggleSection>
 		</div>
 	);
 }
