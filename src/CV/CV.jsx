@@ -30,9 +30,11 @@ function Cv() {
 			<ToggleSection section="Profile">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">Profile</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
+							Profile
+						</h2>
 						{openSection === "Profile" && (
-							<p className="text-left">
+							<p className="text-center">
 								Aspiring software engineer skilled in Ruby, JavaScript, and
 								Python, experienced in building full-stack applications with
 								Ruby on Rails and the PERN stack. A collaborative team player,
@@ -47,11 +49,11 @@ function Cv() {
 			<ToggleSection section="Technical Skills">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Technical skills
 						</h2>
 						{openSection === "Technical Skills" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>Languages: JavaScript, HTML5, CSS3, Ruby, Python, Java</li>
 								<li>Frameworks: Ruby on Rails, React, Flask, Django</li>
 								<li>Database: PostgreSQL, SQLite, MongoDB</li>
@@ -72,11 +74,11 @@ function Cv() {
 			<ToggleSection section="Other Skills">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Other skills
 						</h2>
 						{openSection === "Other Skills" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>Project Management</li>
 								<li>Team Leadership</li>
 								<li>Problem Solving</li>
@@ -95,11 +97,11 @@ function Cv() {
 			<ToggleSection section="Recent roles">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Recent roles
 						</h2>
 						{openSection === "Recent roles" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>
 									Full-Stack Developer | RDAutos | Dates: 01/06/2023 -
 									01/12/2023
@@ -157,11 +159,11 @@ function Cv() {
 			<ToggleSection section="Work history">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Work history
 						</h2>
 						{openSection === "Work history" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>Tutor, Editor | Freelance | Dates: 2007 - present</li>
 								<ul>
 									<li>
@@ -197,11 +199,11 @@ function Cv() {
 			<ToggleSection section="Older roles">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Older roles prior to 2005
 						</h2>
 						{openSection === "Older roles" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>Box Office Manager | Lyric Theatre | Dates: 2003 - 2005</li>
 								<ul>
 									<li>
@@ -235,11 +237,11 @@ function Cv() {
 			<ToggleSection section="Education">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-left cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold">
 							Education
 						</h2>
 						{openSection === "Education" && (
-							<ul className="text-left">
+							<ul className="text-center">
 								<li>Web Development | Le Wagon | Dates: 2022 - 2023</li>
 								<ul>
 									<li>
