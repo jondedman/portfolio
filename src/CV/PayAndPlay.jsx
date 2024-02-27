@@ -35,47 +35,102 @@ function PayAndPlay() {
 					<>
 						<h2 className="font-bold my-2">Brief</h2>
 						{openSection === "Brief" && (
+							<>
+								<p>
+									Venues Pay and Play was my first collaborative project with my
+									wonderful friends{" "}
+									<a
+										href="https://github.com/fransan6"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Francesca Sandford
+									</a>
+									,{" "}
+									<a
+										href="https://github.com/alexagodzilla"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Alessandro Agozzino
+									</a>{" "}
+									and{" "}
+									<a
+										href="https://github.com/ilariaperoni"
+										target="_blank"
+										rel="noreferrer"
+										className="underline active:text-blue active:font-bold"
+									>
+										Ilaria Peroni
+									</a>
+									. I have forked a copy of the original project from my github
+									repo. The original project was built over several months in
+									Ruby on Rails.
+								</p>
+
+								<p>
+									After identifying the pain point, I came up with the concept
+									for the booking system which, based up an Air B'n'B style app,
+									would allow music rehearsal venues to list their venues for
+									hire for musicians. The idea was then refined within my group.
+									User stories were implemented and and a wireframe using Figma.
+									My resposnsibiilties on this project were the intial concept,
+									integration of the Google places API, seed data and cards for
+									the front end.
+								</p>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Stack used">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Stack used</h2>
+						{openSection === "Stack used" && (
+							<ul>
+								<li>Ruby on Rails</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Faker</li>
+								<li>Mapbox</li>
+								<li>Stimulus</li>
+								<li>Google places API</li>
+								<li>Postgresql</li>
+								<li>Bootstrap</li>
+								<li>Heroku</li>
+							</ul>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Challenges">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Challenges</h2>
+						{openSection === "Challenges" && (
 							<p>
-								Venues Pay and Play was my first collaborative project with my
-								wonderful friends{" "}
-								<a
-									href="https://github.com/fransan6"
-									target="_blank"
-									rel="noreferrer"
-									className="underline active:text-blue active:font-bold"
-								>
-									Francesca Sandford
-								</a>
-								,{" "}
-								<a
-									href="https://github.com/alexagodzilla"
-									target="_blank"
-									rel="noreferrer"
-									className="underline active:text-blue active:font-bold"
-								>
-									Alessandro Agozzino
-								</a>{" "}
-								and{" "}
-								<a
-									href="https://github.com/ilariaperoni"
-									target="_blank"
-									rel="noreferrer"
-									className="underline active:text-blue active:font-bold"
-								>
-									Ilaria Peroni
-								</a>
-								. I have forked a copy of the original project from my github
-								repo. The original project was built over several months in Ruby
-								on Rails.
+								This was the first big projecg i had ever worked no and so there
+								were numerous challenges. The biggest challenge was the
+								integration of the Google places API. Also, getting used to the
+								Agile methodology was a challenge. I had to learn to work in a
+								team and to use git and GitHub. I also had to learn to use Figma
+								for the wireframe. It was very rewarding to see the project come
+								together and to see the final product. That said, I am concious
+								that there is still a lot of work to be done on this project.
+								For example, we have integrated the band search of venues etc,
+								but not yet the venue owners ability to list their venues. I
+								would like to continue to work on this project in the future.
+								Also, i would like to work on a stripe payment system for the
+								project. I belive this project has a lot of commercial
+								potential.
 							</p>
 						)}
 					</>
 				)}
 			</ToggleSection>
-			<p>description of Venues Pay and Play and stack used</p>
-			<p>Image of Pay and Play</p>
-			<p>Link to Pay and Play</p>
-			<p>Link to Github</p>
 		</div>
 	);
 }
