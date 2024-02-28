@@ -25,20 +25,20 @@ const Navbar = () => {
 						/>
 					</svg>
 				</button>
-				<h1 className="md:text-2xl xs:text-lg font-bold text-center font-poppins text-background-color">
+				<h1 className="md:text-2xl text-lg font-bold text-center font-poppins text-background-color">
 					Jon Dedman - Portfolio
 				</h1>
 			</div>
 
 			<div
-				className={`fixed top-0 left-0 w-fit h-fit bg-banner-color xs:opacity-60 md:opacity-100 text-background-color z-10 transform transition-transform duration-200 ease-in-out ${
+				className={`fixed top-0 left-0 w-fit h-fit bg-banner-color opacity-60 md:opacity-100 text-background-color z-10 transform transition-transform duration-200 ease-in-out ${
 					isOpen ? "translate-x-0" : "-translate-x-full"
-				} md:relative md:translate-x-0 md:w-auto md:h-auto xs:flex-col xs:items-start text-background-color md:text-lg md:justify-around mx-auto p-2 xs:text-xs xs:justify-start xs:absolute xs:top-16 md:top-0`}
+				} md:relative md:translate-x-0 md:w-auto md:h-auto flex-col items-start text-background-color md:text-lg md:justify-around mx-auto p-2 text-xs justify-start absolute top-16 md:top-0`}
 			>
 				<div className="md:flex md:flex-row md:justify-center md:items-start ">
-					<h2 className="xs:my-3 xs:mx-2">+447932563406</h2>
-					<h2 className="xs:my-3 xs:mx-2">jonathandedman@hotmail.com</h2>
-					<h2 className="xs:my-3 xs:mx-2 hover:text-blue-800">
+					<h2 className="my-3 mx-2">+447932563406</h2>
+					<h2 className="my-3 mx-2">jonathandedman@hotmail.com</h2>
+					<h2 className="my-3 mx-2 hover:text-blue-800">
 						<a
 							href="https://github.com/jondedman"
 							target="_blank"
@@ -57,7 +57,7 @@ const Navbar = () => {
 							</svg>
 						</a>
 					</h2>
-					<h2 className=" xs:my-3 xs:mx-2 hover:text-blue-800">
+					<h2 className=" my-3 mx-2 hover:text-blue-800">
 						<a
 							href="https://linkedin.com/in/jon-dedman"
 							target="_blank"

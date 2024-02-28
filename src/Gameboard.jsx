@@ -19,7 +19,7 @@ function GameBoard() {
 	};
 	return (
 		<div className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color gap-2">
-			<div className="sm:col-start-4 sm:row-start-1 sm:col-span-1 sm:row-span-1 sm:h-full sm:w-full flex sm:justify-start sm:items-end justify-start items-center ">
+			<div className="md:col-start-4 md:row-start-1 md:col-span-1 md:row-span-1 md:h-full md:w-full flex md:justify-start md:items-end justify-start items-center ">
 				<div
 					className="md:h-3/4 md:w-1/2 w-full h-1/2 mx-0"
 					onClick={(event) => handleClick(event)}
