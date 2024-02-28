@@ -9,7 +9,7 @@ function Cv() {
 	};
 
 	return (
-		<div className="overflow-auto h-full p-6" onClick={handleClick}>
+		<div className="overflow-auto h-full p-4" onClick={handleClick}>
 			<h1 className="mb-4 font-bold">CV</h1>
 			<div>
 				<a
@@ -23,7 +23,7 @@ function Cv() {
 			</div>
 
 			<h2 className="text-left my-2 font-bold">Contact</h2>
-			<div className="md:h-1/3 border border-1 rounded-lg mb-4 h-2/3">
+			<div className="border border-1 rounded-lg mb-4 h-2/3 lg:h-1/3 ">
 				<ContactMe />
 			</div>
 

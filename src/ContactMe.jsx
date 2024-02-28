@@ -31,7 +31,7 @@ export const ContactMe = () => {
 	return (
 		<div>
 			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3  ">
-				<div className="md:flex md:justify-start md:m-2">
+				<div className=" sm:text-sm lg:flex sm:justify-start sm:m-2">
 					<label className="m-1">Name:</label>
 					<input
 						type="text"
@@ -52,7 +52,7 @@ export const ContactMe = () => {
 						className="text-black m-2 rounded-lg w-full h-full"
 					/>
 				</div>
-				<button className="border border-1 p-2 text-bold text-sm md:border-2 md:text-md rounded-lg mt-2 transition duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-300 hover:text-white hover:font-bold hover:underline hover:active:bg-blue-500 hover:active:text-white hover:active:font-bold hover:active:underline">
+				<button className="border border-1 p-2 text-bold text-sm rounded-lg md:mt-2 transition duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-300 hover:text-white hover:font-bold hover:underline hover:active:bg-blue-500 hover:active:text-white hover:active:font-bold hover:active:underline">
 					<input type="submit" value="Send" />
 				</button>
 			</form>

@@ -112,7 +112,7 @@ function PayAndPlay() {
 						<h2 className="font-bold my-2">Challenges</h2>
 						{openSection === "Challenges" && (
 							<p>
-								This was the first big projecg i had ever worked no and so there
+								This was the first big project i had ever worked on and so there
 								were numerous challenges. The biggest challenge was the
 								integration of the Google places API. Also, getting used to the
 								Agile methodology was a challenge. I had to learn to work in a
