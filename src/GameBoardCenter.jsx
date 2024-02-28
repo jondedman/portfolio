@@ -49,7 +49,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 	return (
 		<div
 			// onClick={handleChildClick}
-			className={`md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-3 md:h-full md:w-5/6 md:mx-auto md:my-auto xs:h-full xs:w-full xs:row-start-2 xs:row-span-2 xs:col-span-4 flip-card ${
+			className={`md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-3 md:h-full md:w-5/6 md:mx-auto md:my-auto h-full w-full row-start-2 row-span-2 col-span-4 flip-card ${
 				isFlipped ? "flipped" : ""
 			}`}
 		>
