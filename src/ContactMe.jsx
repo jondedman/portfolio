@@ -30,13 +30,13 @@ export const ContactMe = () => {
 
 	return (
 		<div>
-			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3  ">
-				<div className=" sm:text-sm lg:flex sm:justify-start sm:m-2">
+			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3 lg:w-full ">
+				<div className=" lg:text-md lg:flex lg:justify-start lg:m-2">
 					<label className="m-1">Name:</label>
 					<input
 						type="text"
 						name="user_name"
-						className="text-black m-2 rounded-lg"
+						className="text-black m-2 rounded-lg lg:w-1/2"
 					/>
 					<label className="m-1">Email:</label>
 					<input
@@ -45,11 +45,11 @@ export const ContactMe = () => {
 						className="text-black m-2 rounded-lg"
 					/>
 				</div>
-				<div className="flex justify-center items-center h-1/2">
+				<div className="flex justify-center items-center h-1/2 lg:h-full">
 					{/* <label className="m-1">Message:</label> */}
 					<textarea
 						name="message"
-						className="text-black m-2 rounded-lg w-full h-full"
+						className="text-black m-2 rounded-lg w-full h-full lg:h-3/4"
 					/>
 				</div>
 				<button className="border border-1 p-2 text-bold text-sm rounded-lg md:mt-2 transition duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-300 hover:text-white hover:font-bold hover:underline hover:active:bg-blue-500 hover:active:text-white hover:active:font-bold hover:active:underline">

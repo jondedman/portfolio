@@ -23,7 +23,7 @@ function Cv() {
 			</div>
 
 			<h2 className="text-left my-2 font-bold">Contact</h2>
-			<div className="border border-1 rounded-lg mb-4 h-2/3 lg:h-1/3 ">
+			<div className="border border-1 rounded-lg mb-4 h-2/3 lg:h-1/3 lg:w-3/4 lg:mx-auto">
 				<ContactMe />
 			</div>
 

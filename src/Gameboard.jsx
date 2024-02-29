@@ -1,6 +1,6 @@
 import GameBoardCenter from "./GameBoardCenter";
 import "./GameBoardCenter.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function GameBoard() {
 	const [isFlipped, setIsFlipped] = useState(false);
@@ -19,9 +19,9 @@ function GameBoard() {
 	};
 	return (
 		<div className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color gap-2">
-			<div className="sm:col-start-4 sm:row-start-1 sm:col-span-1 sm:row-span-1 sm:h-full sm:w-full flex sm:justify-center sm:items-start justify-start items-center ">
+			<div className="col-start-4 row-start-1 col-span-1 row-span-1 h-full w-full flex justify-start items-center sm:justify-center sm:items-start md:justify-end md:items-center lg:justify-center lg:items-start">
 				<div
-					className="sm:h-3/4 sm:w-1/2 w-full h-1/2 mx-0"
+					className="w-full h-1/2 mx-0 sm:h-3/4 sm:w-1/2 md:h-1/2 md:w-3/4 lg:w-1/2"
 					onClick={(event) => handleClick(event)}
 					data-content="jaipur"
 				>
@@ -33,10 +33,10 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="sm:col-start-1 sm:row-start-1 sm:col-span-1 sm:row-span-1 md:h-full sm:w-full flex sm:justify-center sm:items-start justify-start items-center">
+			<div className="col-start-1 row-start-1 col-span-1 row-span-1 h-full w-full flex justify-start items-center sm:justify-center sm:items-start md:justify-start md:items-center lg:justify-center lg:items-start">
 				<div
+					className="w-full h-1/2 mx-0 sm:h-3/4 sm:w-1/2 md:h-1/2 md:w-3/4 lg:w-1/2"
 					onClick={(event) => handleClick(event)}
-					className="sm:h-3/4 sm:w-1/2 w-full h-1/2 mx-0"
 					data-content="rda"
 				>
 					<img
@@ -47,10 +47,10 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="sm:col-start-1 sm:row-start-3 sm:col-span-1 sm:row-span-1 sm:h-full sm:w-full flex sm:justify-center sm:items-end col-start-2 row-start-1 justify-end items-center">
+			<div className="col-span-1 row-span-1 h-full w-full flex col-start-2 row-start-1 justify-end items-center sm:col-start-1 sm:row-start-3 sm:justify-center sm:items-end md:justify-start md:items-center lg:justify-center lg:items-end">
 				<div
+					className="w-full h-1/2 mx-0 sm:h-3/4 sm:w-1/2 md:h-1/2 md:w-3/4 lg:w-1/2"
 					onClick={(event) => handleClick(event)}
-					className="sm:h-3/4 sm:w-1/2 w-full h-1/2 mx-0"
 					data-content="pnp"
 				>
 					<img
@@ -61,9 +61,9 @@ function GameBoard() {
 				</div>
 			</div>
 
-			<div className="sm:col-start-4 sm:row-start-3 sm:col-span-1 sm:row-span-1 sm:h-full sm:w-full flex sm:justify-center sm:items-end col-start-3 row-start-1 justify-end items-center">
+			<div className="col-start-3 row-start-1 justify-end items-center sm:col-start-4 sm:row-start-3 col-span-1 row-span-1 h-full w-full flex sm:justify-center sm:items-end md:justify-end md:items-center lg:justify-center lg:items-end">
 				<div
-					className="sm:h-3/4 sm:w-1/2 w-full h-1/2 mx-0"
+					className=" w-full h-1/2 mx-0 sm:h-3/4 sm:w-1/2 md:h-1/2 md:w-3/4 lg:w-1/2"
 					onClick={(event) => handleClick(event)}
 					data-content="what can i eat"
 				>
@@ -77,16 +77,9 @@ function GameBoard() {
 			<div
 				onClick={(event) => handleClick(event)}
 				data-content="cv"
-				className="sm:col-start-2 sm:row-start-1 sm:col-span-2 sm:row-span-3 h-full w-full lg:h-5/6 lg:w-5/6 sm:mx-auto sm:my-auto row-start-2 row-span-2 col-span-4 flip-card"
-				// onClick={(event) => handleClick(event)}
-				// onMouseDown={() => handleClick("cv")}
-				// onTouchStart={() => handleClick("cv")}
+				className="h-full w-full row-start-2 row-span-2 col-span-4 sm:col-start-2 sm:row-start-1 sm:col-span-2 sm:row-span-3 sm:mx-auto sm:my-auto md:h-3/4 md:w-full md:row-span-3 lg:h-full lg:w-full row-start-2 row-span-2 col-span-4 flip-card"
 			>
-				{/* <div
-					className="h-full"
-					data-content="cv"
-					onClick={(event) => handleClick(event)}
-				> */}
+				{/* <div className="flip-card"> */}
 				<GameBoardCenter isFlipped={isFlipped} backContent={backContent} />
 				{/* </div> */}
 			</div>
