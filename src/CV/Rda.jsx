@@ -4,7 +4,6 @@ function Rda() {
 	const handleClick = (event) => {
 		event.stopPropagation();
 		console.log("clicked in rda");
-		// Add any additional click handling code here
 	};
 	return (
 		<div
@@ -16,11 +15,13 @@ function Rda() {
 				href="https://github.com/jondedman/booking-system"
 				target="_blank"
 				rel="noreferrer"
-				className="underline active:text-blue active:font-bold"
+				className="active:text-blue active:font-bold"
 			>
-				<span className="font-bold">RD Autos Booking System </span>
+				<span className="font-bold sm:text-md md:text-lg lg:text-xl">
+					RD Autos Booking System{" "}
+				</span>
 				<svg
-					className="h-6 w-6 inline-block ml-2"
+					className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
 				>
