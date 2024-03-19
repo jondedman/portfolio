@@ -36,7 +36,7 @@ function Jaipur() {
 			</div>
 			<h2 className="text-bold my-4">
 				<a
-					href="https://jaipur-987f936505cd.herokuapp.com/games/5"
+					href="https://jaipur-987f936505cd.herokuapp.com"
 					target="blank"
 					rel="noreferrer"
 					className="active:text-blue active:font-bold"
@@ -100,22 +100,28 @@ function Jaipur() {
 					<>
 						<h2 className="font-bold my-2">Challenges</h2>
 						{openSection === "Challenges" && (
-							<p>
-								In order to scope out the problem and understand the logic of
-								the game, it went through three iterations. The first iteration
-								was a CLI game. The second iteration was a web game built using
-								HTML, CSS and JavaScript using simple emojis. Then I built the
-								final version using Ruby on Rails, HTML, CSS, Hotwire and
-								Tailwind CSS. The art was provided by Dall-e. The biggest
-								challenge was to build the game state which i decided to handle
-								with a postgreSQL database. I had to use Hotwire and stimulus to
-								manage the game state and to update the game board. Following on
-								from the game logic, the next challenge was to make the game
-								fully responsive. The next steps are to use websockets and
-								action cable to enable two players to play the game in real time
-								on separate devices. Then i plan to improve the card exchage
-								logic to use a drag and drop feature.
-							</p>
+							<>
+								<p>
+									In order to scope out the problem and understand the logic of
+									the game, it went through three iterations. The first
+									iteration was a CLI game. The second iteration was a web game
+									built using HTML, CSS and JavaScript using simple emojis. Then
+									I built the final version using Ruby on Rails, HTML, CSS,
+									Hotwire and Tailwind CSS. The art was provided by Dall-e. The
+									biggest challenge was to build the game state which i decided
+									to handle with a postgreSQL database. I had to use Hotwire and
+									stimulus to manage the game state and to update the game
+									board. Following on from the game logic, the next challenge
+									was to make the game fully responsive. The next steps are to
+									use websockets and action cable to enable two players to play
+									the game in real time on separate devices. Then i plan to
+									improve the card exchage logic to use a drag and drop feature.
+								</p>
+								<p>
+									Two player is now live - there are some problems on mobile
+									devices. I am working on a fix.
+								</p>
+							</>
 						)}
 					</>
 				)}
