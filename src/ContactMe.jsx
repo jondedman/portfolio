@@ -1,14 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
 export const ContactMe = () => {
-	// const handleClick = (event) => {
-	// 	event.stopPropagation();
-	// 	// event.preventDefault();
-	// };
 	const form = useRef();
+	const [message, setMessage] = useState("");
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -20,16 +17,23 @@ export const ContactMe = () => {
 			.then(
 				() => {
 					console.log("SUCCESS!");
+					setMessage("Message sent successfully!");
 					form.current.reset();
 				},
 				(error) => {
 					console.log("FAILED...", error.text);
+					setMessage("Message not sent. Please try again.");
 				}
 			);
 	};
 
 	return (
 		<div>
+			{message && (
+				<div className="alert p-2 text-center text-lg font-bold animate-pulse">
+					{message}
+				</div>
+			)}
 			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3 lg:w-full ">
 				<div className=" lg:text-md lg:flex lg:justify-start lg:m-2">
 					<label className="m-1">Name:</label>
