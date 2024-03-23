@@ -36,20 +36,20 @@ export const ContactMe = () => {
 					<input
 						type="text"
 						name="user_name"
-						className="text-black m-2 rounded-lg lg:w-1/2"
+						className="text-black m-2 rounded-lg lg:w-1/2 p-2"
 					/>
 					<label className="m-1">Email:</label>
 					<input
 						type="email"
 						name="user_email"
-						className="text-black m-2 rounded-lg"
+						className="text-black m-2 rounded-lg p-2"
 					/>
 				</div>
 				<div className="flex justify-center items-center h-1/2 lg:h-full">
 					{/* <label className="m-1">Message:</label> */}
 					<textarea
 						name="message"
-						className="text-black m-2 rounded-lg w-full h-full lg:h-3/4"
+						className="text-black m-2 rounded-lg w-full h-full lg:h-3/4 p-2"
 					/>
 				</div>
 				<button className="border border-1 p-2 text-bold text-sm rounded-lg md:mt-2 transition duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-300 hover:text-white hover:font-bold hover:underline hover:active:bg-blue-500 hover:active:text-white hover:active:font-bold hover:active:underline">
