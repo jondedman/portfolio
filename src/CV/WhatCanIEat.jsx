@@ -33,14 +33,14 @@ function WhatCanIEat() {
 				</a>{" "}
 			</div>
 
-			<a
+			{/* <a
 				className="text-white underline"
 				href="http://www.whatcanieat.world"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				What Can I Eat!? - see it live on Heroku
-			</a>
+			</a> */}
 			<ToggleSection section="Brief">
 				{(openSection) => (
 					<>
