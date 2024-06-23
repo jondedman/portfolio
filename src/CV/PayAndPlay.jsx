@@ -73,22 +73,69 @@ function PayAndPlay() {
 									repo. The original project was built over several months in
 									Ruby on Rails.
 								</p>
-
+								<br />
 								<p>
-									After identifying the pain point, I came up with the concept
-									for the booking system which, based up an Air B'n'B style app,
-									would allow music rehearsal venues to list their venues for
-									hire for musicians. The idea was then refined within my group.
-									User stories were implemented and and a wireframe using Figma.
-									My resposnsibiilties on this project were the intial concept,
-									integration of the Google places API, seed data and cards for
-									the front end.
+									After identifying a key pain point in the music rehearsal
+									industry, I conceptualized a booking system inspired by the
+									Air B'n'B model. This platform allows music rehearsal venues
+									to list their spaces for hire, making it easier for musicians
+									to find and book rehearsal spots. The idea was further refined
+									in collaboration with my team, leading to the development of
+									user stories and the creation of a wireframe using Figma.
 								</p>
+								<br />
 							</>
 						)}
 					</>
 				)}
 			</ToggleSection>
+			<ToggleSection section="My Responsibilities">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">My Responsibilities</h2>
+
+						{openSection === "My Responsibilities" && (
+							<>
+								<ul>
+									<li>
+										Initial Concept: I was responsible for the initial concept
+										of the project, ensuring that it addressed the identified
+										pain points and provided a seamless solution for both venue
+										owners and musicians.
+									</li>
+									<br />
+									<li>
+										Google Places API Integration: I integrated the Google
+										Places API to enhance the search functionality, allowing
+										users to easily find and view available rehearsal venues
+										based on location.
+									</li>
+									<br />
+									<li>
+										Seed Data: I managed the creation and implementation of seed
+										data to populate the database with sample venues, ensuring
+										that the system had realistic data for testing and
+										demonstration purposes.
+									</li>
+									<br />
+									<li>
+										Front-End Development: I developed the front-end cards,
+										which display venue information attractively and intuitively
+										to users, contributing to a user-friendly interface.
+									</li>
+									<br />
+									<li>
+										By combining these elements, we created a functional and
+										user-friendly booking system tailored to the needs of
+										musicians and venue owners alike.
+									</li>
+								</ul>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+
 			<ToggleSection section="Stack used">
 				{(openSection) => (
 					<>
@@ -115,22 +162,31 @@ function PayAndPlay() {
 					<>
 						<h2 className="font-bold my-2">Challenges</h2>
 						{openSection === "Challenges" && (
-							<p>
-								This was the first big project i had ever worked on and so there
-								were numerous challenges. The biggest challenge was the
-								integration of the Google places API. Also, getting used to the
-								Agile methodology was a challenge. I had to learn to work in a
-								team and to use git and GitHub. I also had to learn to use Figma
-								for the wireframe. It was very rewarding to see the project come
-								together and to see the final product. That said, I am concious
-								that there is still a lot of work to be done on this project.
-								For example, we have integrated the band search of venues etc,
-								but not yet the venue owners ability to list their venues. I
-								would like to continue to work on this project in the future.
-								Also, i would like to work on a stripe payment system for the
-								project. I belive this project has a lot of commercial
-								potential.
-							</p>
+							<>
+								<p>
+									This was the first significant project I had ever worked on,
+									and it presented numerous challenges. The biggest hurdle was
+									integrating the Google Places API. Additionally, adapting to
+									the Agile methodology was challenging as I had to learn to
+									work effectively in a team and become proficient with Git and
+									GitHub. Using Figma for creating the wireframe was another new
+									skill I had to develop.
+								</p>
+								<p>
+									Despite these challenges, it was incredibly rewarding to see
+									the project come together and witness the final product.
+									However, I am aware that there is still much work to be done.
+									For instance, while we have integrated the band search feature
+									for venues, we have yet to enable venue owners to list their
+									spaces.
+								</p>
+								<p>
+									I am eager to continue working on this project, particularly
+									focusing on integrating a Stripe payment system. I believe
+									this project has significant commercial potential and look
+									forward to further developing it.
+								</p>
+							</>
 						)}
 					</>
 				)}
