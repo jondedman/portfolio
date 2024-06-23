@@ -82,23 +82,34 @@ function WhatCanIEat() {
 								</p>
 
 								<p>
-									What can I eat!? is a web application that allows users to
-									make use of left-over ingredients in their fridge. The app
+									What can I eat!? is a web application designed to help users
+									make use of leftover ingredients in their fridge. The app
 									allows users to search for recipes based on the ingredients
-									they have. The app also allows users to save recipes to their
-									profile. The app needed to be visually appealing and provide a
-									good user experience. The app also needed to be deployed on
-									Heroku. It was my idea to add a social aspect to the app: uers
-									would be able to see the contents of each others pantries and
-									fridges, and then meet in a chatroom to discuss what they
-									could make together. My responsibilities on this project
-									included the integration of the Spoonacular API, and using
-									this to seed the app with data to create an MVP. I also
-									contributed to the Front end design of the show pages. In
-									addition i researched and impleented the ful text search
-									functionality using the pg_search gem.
+									they have, and also lets them save recipes to their profile.
+									The goal was to create a visually appealing application that
+									provides a great user experience. Additionally, the app needed
+									to be deployed on Heroku. I proposed and implemented a social
+									aspect for the app, enabling users to see the contents of each
+									other’s pantries and fridges, and meet in chatrooms to discuss
+									what they could cook together.
 								</p>
 							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Responsibilities">
+				{(openSection) => (
+					<>
+						<h2 className="font-bold my-2">Responsibilities</h2>
+						{openSection === "Responsibilities" && (
+							<p>
+								Integrated the Spoonacular API to seed the app with data and
+								create a Minimum Viable Product (MVP). Contributed to the
+								front-end design of the recipe show pages. Researched and
+								implemented full-text search functionality using the pg_search
+								gem.
+							</p>
 						)}
 					</>
 				)}
@@ -132,13 +143,13 @@ function WhatCanIEat() {
 								Finding an appropriate API was a challenge. The Spoonacular API
 								was chosen because it was free and had a good range of recipes.
 								The API was also easy to use and had good documentation. The API
-								was used to seed the app with data. The data was stored in JSONS
-								and then imported into the database. The biggest challenge was
-								the full text search functionality. I had to research and
+								was used to seed the app with data. The data was stored in JSON
+								files and then imported into the database. The biggest challenge
+								was the full-text search functionality. I had to research and
 								implement the pg_search gem. This was a challenge because it was
 								the first time I had used this gem. After researching the
-								different options, i decided that PGsearch was going o be the
-								quickest and most lightweight option to implement. The app culd
+								different options, I decided that pg_search was going to be the
+								quickest and most lightweight option to implement. The app could
 								be further improved by sourcing better recipes and improving the
 								front-end to make it fully responsive.
 							</p>
