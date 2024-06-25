@@ -2,14 +2,6 @@
 
 This project is a personal portfolio website built using React, Vite, and Tailwind CSS. It is configured with ESLint for code quality and uses Yarn as the package manager.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Scripts](#scripts)
-- [Dependencies](#dependencies)
-- [DevDependencies](#devdependencies)
-- [License](#license)
-
 ## Installation
 
 First, ensure that you have [Yarn](https://yarnpkg.com/) installed. Then, clone the repository and install the dependencies:
