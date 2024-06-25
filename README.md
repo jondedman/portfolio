@@ -1,6 +1,6 @@
 # Portfolio Project
 
-This project is a personal portfolio website built using React, Vite, and Tailwind CSS. It is configured with ESLint for code quality and uses Yarn as the package manager.
+This project is a personal portfolio website built using React, Vite, and Tailwind CSS. 
 
 ## Installation
 
