@@ -5,6 +5,9 @@
 	text-align: center;
 	transition: transform 0.5s;
 	transform-style: preserve-3d;
+	/* background-image: url("https://images.unsplash.com/photo-1713562861618-b18992824170?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover; */
+	/* background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
 }
 
 .flip-card-front,
