@@ -38,7 +38,7 @@ const Navbar = () => {
 				<div className="md:flex md:flex-row md:justify-center md:items-start ">
 					<h2 className="mb-1 mx-2">+447932563406</h2>
 					<h2 className="mb-1 mx-2">jonathandedman@hotmail.com</h2>
-					<h2 className="mb-1 mx-2 hover:text-blue-800">
+					<h2 className="mb-1 mx-2 hover:text-skyBlue">
 						<a
 							href="https://github.com/jondedman"
 							target="_blank"
@@ -57,7 +57,7 @@ const Navbar = () => {
 							</svg>
 						</a>
 					</h2>
-					<h2 className=" mb-1 mx-2 hover:text-blue-800">
+					<h2 className=" mb-1 mx-2 hover:text-skyBlue">
 						<a
 							href="https://linkedin.com/in/jon-dedman"
 							target="_blank"
