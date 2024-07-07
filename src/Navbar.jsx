@@ -5,7 +5,7 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<div className="flex justify-center items-center bg-shirtBlue h-[8vh] w-full">
+			<div className="flex justify-center items-center bg-shirtBlue h-[6vh] w-full">
 				<button
 					className="p-1 md:hidden bg-background-color rounded-lg absolute left-4"
 					onClick={() => setIsOpen(!isOpen)}
@@ -36,9 +36,9 @@ const Navbar = () => {
 				} md:relative md:translate-x-0 md:w-auto md:h-auto flex-col items-start text-background-color md:text-lg md:justify-around mx-auto p-2 text-xs justify-start absolute top-16 md:top-0`}
 			>
 				<div className="md:flex md:flex-row md:justify-center md:items-start ">
-					<h2 className="my-3 mx-2">+447932563406</h2>
-					<h2 className="my-3 mx-2">jonathandedman@hotmail.com</h2>
-					<h2 className="my-3 mx-2 hover:text-blue-800">
+					<h2 className="mb-1 mx-2">+447932563406</h2>
+					<h2 className="mb-1 mx-2">jonathandedman@hotmail.com</h2>
+					<h2 className="mb-1 mx-2 hover:text-blue-800">
 						<a
 							href="https://github.com/jondedman"
 							target="_blank"
@@ -57,7 +57,7 @@ const Navbar = () => {
 							</svg>
 						</a>
 					</h2>
-					<h2 className=" my-3 mx-2 hover:text-blue-800">
+					<h2 className=" mb-1 mx-2 hover:text-blue-800">
 						<a
 							href="https://linkedin.com/in/jon-dedman"
 							target="_blank"
