@@ -5,7 +5,7 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<div className="flex justify-center items-center bg-banner-color h-[8vh] w-full">
+			<div className="flex justify-center items-center bg-shirtBlue h-[8vh] w-full">
 				<button
 					className="p-1 md:hidden bg-background-color rounded-lg absolute left-4"
 					onClick={() => setIsOpen(!isOpen)}
@@ -31,7 +31,7 @@ const Navbar = () => {
 			</div>
 
 			<div
-				className={`fixed top-0 left-0 w-fit h-fit bg-banner-color opacity-60 md:opacity-100 text-background-color z-10 transform transition-transform duration-200 ease-in-out ${
+				className={`fixed top-0 left-0 w-fit h-fit bg-shirtBlue opacity-60 md:opacity-100 text-background-color z-10 transform transition-transform duration-200 ease-in-out ${
 					isOpen ? "translate-x-0" : "-translate-x-full"
 				} md:relative md:translate-x-0 md:w-auto md:h-auto flex-col items-start text-background-color md:text-lg md:justify-around mx-auto p-2 text-xs justify-start absolute top-16 md:top-0`}
 			>

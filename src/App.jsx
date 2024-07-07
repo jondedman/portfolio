@@ -14,7 +14,7 @@ function App() {
 			<div className="flex items-center justify-center h-[calc(100vh - 15vh)] mx-auto w-3/4 bg-background-color w-full h-full">
 				<GameBoard />
 			</div>
-			<div className="bg-banner-color h-[5vh] w-full"></div>
+			<div className="bg-shirtBlue h-[5vh] w-full"></div>
 		</div>
 	);
 }
