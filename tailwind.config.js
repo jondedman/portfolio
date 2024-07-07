@@ -41,6 +41,7 @@ export default {
 			colors: {
 				flippedCard: "#A4D8EB",
 				shirtBlue: "#233550",
+				skyBlue: "#A2E1FA",
 				"monopoly-green": "#96C795",
 				"background-color": "#F5EDDB",
 				"banner-color": "#241A15",

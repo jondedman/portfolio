@@ -18,7 +18,7 @@ function GameBoard() {
 		}
 	};
 	return (
-		<div className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-background-color gap-2">
+		<div className="grid grid-cols-4 grid-rows-3 gap-4 py-4 px-8 border-1 border-black h-screen w-full bg-skyBlue gap-2">
 			<div className="col-start-4 row-start-1 col-span-1 row-span-1 h-full w-full flex justify-start items-center sm:justify-center sm:items-start md:justify-end md:items-center lg:justify-center lg:items-start">
 				<div
 					className="w-full h-1/2 mx-0 sm:h-3/4 sm:w-1/2 md:h-1/2 md:w-3/4 lg:w-1/2"

@@ -8,10 +8,10 @@ import Navbar from "./Navbar";
 
 function App() {
 	return (
-		<div className="w-full h-full bg-background-color">
+		<div className="w-full h-full bg-skyBlue">
 			<Navbar />
-			<Instructions />
-			<div className="flex items-center justify-center h-[calc(100vh - 15vh)] mx-auto w-3/4 bg-background-color w-full h-full">
+			{/* <Instructions /> */}
+			<div className="flex items-center justify-center h-[calc(100vh - 15vh)] mx-auto w-3/4 bg-skyBlue w-full h-full">
 				<GameBoard />
 			</div>
 			<div className="bg-shirtBlue h-[5vh] w-full"></div>
