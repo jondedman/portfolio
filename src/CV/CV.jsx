@@ -76,7 +76,7 @@ function Cv() {
 							Other skills
 						</h2>
 						{openSection === "Other Skills" && (
-							<ul className="text-center">
+							<ul className="text-center text-shirtBlue">
 								<li>Project Management</li>
 								<li>Team Leadership</li>
 								<li>Problem Solving</li>
