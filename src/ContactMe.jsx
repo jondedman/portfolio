@@ -36,23 +36,23 @@ export const ContactMe = () => {
 			)}
 			<form ref={form} onSubmit={sendEmail} className="my-4 h-2/3 lg:w-full ">
 				<div className=" lg:text-md lg:flex lg:justify-start">
-					<label className="m-1">Name:</label>
 					<input
 						type="text"
 						name="user_name"
+						placeholder="Name"
 						className="text-shirtBlue m-2 rounded-lg lg:w-1/2 p-2"
 					/>
-					<label className="m-1">Email:</label>
 					<input
 						type="email"
 						name="user_email"
+						placeholder="Email"
 						className="text-shirtBlue m-2 rounded-lg p-2"
 					/>
 				</div>
 				<div className="flex justify-center items-center h-1/2 lg:h-full">
-					{/* <label className="m-1">Message:</label> */}
 					<textarea
 						name="message"
+						placeholder="Message..."
 						className="text-shirtBlue m-2 rounded-lg w-full h-full lg:h-3/4 p-2"
 					/>
 				</div>
