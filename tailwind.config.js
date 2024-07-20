@@ -40,6 +40,7 @@ export default {
 			},
 			colors: {
 				flippedCard: "#A4D8EB",
+				seaShell: "#FFF5EE",
 				shirtBlue: "#233550",
 				skyBlue: "#A2E1FA",
 				"monopoly-green": "#96C795",
@@ -58,3 +59,10 @@ export default {
 	},
 	plugins: [],
 };
+
+// Ivory: #FFFFF0
+// Ghost White: #F8F8FF
+// Seashell: #FFF5EE
+// Snow: #FFFAFA
+// Linen: #FAF0E6
+// Antique White: #FAEBD7

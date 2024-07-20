@@ -25,15 +25,15 @@ const Navbar = () => {
 						/>
 					</svg>
 				</button>
-				<h1 className="md:text-2xl text-lg font-bold text-center font-poppins text-white">
+				<h1 className="md:text-2xl text-lg font-bold text-center font-poppins text-seaShell">
 					Jon Dedman - Portfolio
 				</h1>
 			</div>
 
 			<div
-				className={`fixed top-0 left-0 w-fit h-fit bg-shirtBlue opacity-60 md:opacity-100 text-white z-10 transform transition-transform duration-200 ease-in-out ${
+				className={`fixed top-0 left-0 w-fit h-fit bg-shirtBlue opacity-60 md:opacity-100 text-seaShell z-10 transform transition-transform duration-200 ease-in-out ${
 					isOpen ? "translate-x-0" : "-translate-x-full"
-				} md:relative md:translate-x-0 md:w-auto md:h-auto flex-col items-start text-white md:text-lg md:justify-around mx-auto p-2 text-xs justify-start absolute top-16 md:top-0`}
+				} md:relative md:translate-x-0 md:w-auto md:h-auto flex-col items-start text-seaShell md:text-lg md:justify-around mx-auto p-2 text-xs justify-start absolute top-16 md:top-0`}
 			>
 				<div className="md:flex md:flex-row md:justify-center md:items-start ">
 					<h2 className="mb-1 mx-2">+447932563406</h2>
