@@ -17,11 +17,11 @@ function WhatCanIEat() {
 					href="https://github.com/jondedman/what-can-i-eat"
 					target="_blank"
 					rel="noreferrer"
-					className="active:text-blue font-bold sm:text-md md:text-lg lg:text-xl"
+					className="active:text-skyBlue font-bold sm:text-md md:text-lg lg:text-xl text-seaShell"
 				>
 					What Can I Eat!?
 					<svg
-						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse"
+						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse hover:text-skyBlue transition-all duration-300 ease-in-out"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 448 512"
 					>
@@ -44,7 +44,7 @@ function WhatCanIEat() {
 			<ToggleSection section="Brief">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Brief</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Brief</h2>
 						{openSection === "Brief" && (
 							<>
 								<p>
@@ -101,7 +101,7 @@ function WhatCanIEat() {
 			<ToggleSection section="Responsibilities">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Responsibilities</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Responsibilities</h2>
 						{openSection === "Responsibilities" && (
 							<p>
 								Integrated the Spoonacular API to seed the app with data and
@@ -117,7 +117,7 @@ function WhatCanIEat() {
 			<ToggleSection section="Stack used">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Stack used</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Stack used</h2>
 						{openSection === "Stack used" && (
 							<ul>
 								<li>Ruby on Rails</li>
@@ -137,7 +137,7 @@ function WhatCanIEat() {
 			<ToggleSection section="Challenges">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Challenges</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Challenges</h2>
 						{openSection === "Challenges" && (
 							<p>
 								Finding an appropriate API was a challenge. The Spoonacular API
