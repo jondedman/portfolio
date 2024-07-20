@@ -19,11 +19,11 @@ function PayAndPlay() {
 					rel="noreferrer"
 					className="active:text-blue active:font-bold"
 				>
-					<span className="font-bold sm:text-md md:text-lg lg:text-xl">
+					<span className="font-bold sm:text-md md:text-lg lg:text-xl text-seaShell">
 						Venues Pay and Play
 					</span>
 					<svg
-						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse"
+						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse hover:text-skyBlue transition-all duration-300 ease-in-out"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 448 512"
 					>
@@ -37,7 +37,7 @@ function PayAndPlay() {
 			<ToggleSection section="Brief">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Brief</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Brief</h2>
 						{openSection === "Brief" && (
 							<>
 								<p>
@@ -92,7 +92,7 @@ function PayAndPlay() {
 			<ToggleSection section="My Responsibilities">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">My Responsibilities</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">My Responsibilities</h2>
 
 						{openSection === "My Responsibilities" && (
 							<>
@@ -139,7 +139,7 @@ function PayAndPlay() {
 			<ToggleSection section="Stack used">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Stack used</h2>
+						<h2 className="fmb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Stack used</h2>
 						{openSection === "Stack used" && (
 							<ul>
 								<li>Ruby on Rails</li>
@@ -160,7 +160,7 @@ function PayAndPlay() {
 			<ToggleSection section="Challenges">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Challenges</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Challenges</h2>
 						{openSection === "Challenges" && (
 							<>
 								<p>
