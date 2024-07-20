@@ -17,11 +17,11 @@ function Rda() {
 				rel="noreferrer"
 				className="active:text-blue active:font-bold"
 			>
-				<span className="font-bold sm:text-md md:text-lg lg:text-xl">
+				<span className="font-bold sm:text-md md:text-lg lg:text-xl text-seaShell">
 					RD Autos Booking System{" "}
 				</span>
 				<svg
-					className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse"
+					className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse hover:text-skyBlue transition-all duration-300 ease-in-out"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
 				>
@@ -34,7 +34,7 @@ function Rda() {
 			<ToggleSection section="Brief">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Brief</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Brief</h2>
 						{openSection === "Brief" && (
 							<p>
 								An internal booking system commisioned for RD Autos (a garage in
@@ -51,7 +51,7 @@ function Rda() {
 			<ToggleSection section="User story 1">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">User story 1</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">User story 1</h2>
 						{openSection === "User story 1" && (
 							<div className="relative pt-56 flex justify-center items-center">
 								<iframe
@@ -71,7 +71,7 @@ function Rda() {
 			<ToggleSection section="Stack">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Stack used</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Stack used</h2>
 						{openSection === "Stack" && (
 							<>
 								<p>
@@ -94,7 +94,7 @@ function Rda() {
 			<ToggleSection section="Back End decisions">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Back End decisions</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Back End decisions</h2>
 						{openSection === "Back End decisions" && (
 							<p>
 								The back end was built using Node.js with Express.js and
@@ -111,7 +111,7 @@ function Rda() {
 			<ToggleSection section="Front End decisions">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Front End decisions</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Front End decisions</h2>
 						{openSection === "Front End decisions" && (
 							<p>
 								The front end was built using React.js. I choose to use
@@ -128,7 +128,7 @@ function Rda() {
 			<ToggleSection section="MiddleWare">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">MiddleWare</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">MiddleWare</h2>
 						{openSection === "MiddleWare" && (
 							<p>
 								I used Bcrypt to hash the passwords and Passport to authenticate
@@ -144,7 +144,7 @@ function Rda() {
 			<ToggleSection section="Hosting and Deployment">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Hosting and Deployment</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Hosting and Deployment</h2>
 						{openSection === "Hosting and Deployment" && (
 							<p>
 								For convenience, I hosted the front end and back end on Heroku.
@@ -159,7 +159,7 @@ function Rda() {
 			<ToggleSection section="Challenges">
 				{(openSection) => (
 					<>
-						<h2 className="font-bold my-2">Challenges</h2>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Challenges</h2>
 						{openSection === "Challenges" && (
 							<p>
 								I wanted to keep the enire codebase in one location so I chose
