@@ -20,7 +20,7 @@ const ToggleSection = ({ section, children }) => {
 				padding: "0.5rem",
 				margin: openSection === section ? "0.5rem" : "0",
 				font: "inherit",
-				color: openSection === section ? "black" : "inherit",
+				color: openSection === section ? "#233550" : "#F5EDDB",
 				borderRadius: openSection === section ? "0.5rem" : "none",
 			}}
 			onClick={toggleSection}

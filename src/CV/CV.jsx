@@ -11,9 +11,9 @@ function Cv() {
 	return (
 		<div className="overflow-auto h-full p-4 lg:mt-6" onClick={handleClick}>
 			<a href="Developer CV.pdf" target="_blank" rel="noopener noreferrer">
-				<span className="font-bold sm:text-md md:text-lg lg:text-xl text-seaShell">CV</span>
+				<span className="p-1 font-bold sm:text-md md:text-lg lg:text-xl text-seaShell hover:text-skyBlue transition-all duration-300 ease-in-out">CV</span>
 				<svg
-					className="h-6 w-6 inline-block ml-2 animate-bounce"
+					className="h-6 w-6 inline-block ml-2 animate-bounce hover:text-skyBlue transition-all duration-300 ease-in-out	"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 512 512"
 				>
@@ -30,7 +30,7 @@ function Cv() {
 			<ToggleSection section="Profile">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold text-seaShell">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Profile
 						</h2>
 						{openSection === "Profile" && (
@@ -49,7 +49,7 @@ function Cv() {
 			<ToggleSection section="Technical Skills">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Technical skills
 						</h2>
 						{openSection === "Technical Skills" && (
@@ -72,7 +72,7 @@ function Cv() {
 			<ToggleSection section="Other Skills">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Other skills
 						</h2>
 						{openSection === "Other Skills" && (
@@ -94,7 +94,7 @@ function Cv() {
 			<ToggleSection section="Recent roles">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Recent roles
 						</h2>
 						{openSection === "Recent roles" && (
@@ -154,7 +154,7 @@ function Cv() {
 			<ToggleSection section="Work history">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Work history
 						</h2>
 						{openSection === "Work history" && (
@@ -193,7 +193,7 @@ function Cv() {
 			<ToggleSection section="Older roles">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Older roles prior to 2005
 						</h2>
 						{openSection === "Older roles" && (
@@ -230,7 +230,7 @@ function Cv() {
 			<ToggleSection section="Education">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">
 							Education
 						</h2>
 						{openSection === "Education" && (
