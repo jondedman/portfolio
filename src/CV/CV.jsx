@@ -24,7 +24,7 @@ function Cv() {
 				</svg>
 			</a>{" "}
 			<h2 className="text-center my-2 font-bold text-seaShell">Contact</h2>
-			<div className="border border-1 rounded-lg mb-4 h-2/3 lg:h-1/3 lg:w-3/4 lg:mx-auto">
+			<div className="border border-1 rounded-lg p-2 mb-4 lg:w-3/4 lg:mx-auto">
 				<ContactMe />
 			</div>
 			<ToggleSection section="Profile">
