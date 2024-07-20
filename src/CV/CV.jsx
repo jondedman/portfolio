@@ -11,7 +11,7 @@ function Cv() {
 	return (
 		<div className="overflow-auto h-full p-4 lg:mt-6" onClick={handleClick}>
 			<a href="Developer CV.pdf" target="_blank" rel="noopener noreferrer">
-				<span className="font-bold sm:text-md md:text-lg lg:text-xl">CV</span>
+				<span className="font-bold sm:text-md md:text-lg lg:text-xl text-seaShell">CV</span>
 				<svg
 					className="h-6 w-6 inline-block ml-2 animate-bounce"
 					xmlns="http://www.w3.org/2000/svg"
@@ -23,14 +23,14 @@ function Cv() {
 					/>
 				</svg>
 			</a>{" "}
-			<h2 className="text-center my-2 font-bold">Contact</h2>
+			<h2 className="text-center my-2 font-bold text-seaShell">Contact</h2>
 			<div className="border border-1 rounded-lg mb-4 h-2/3 lg:h-1/3 lg:w-3/4 lg:mx-auto">
 				<ContactMe />
 			</div>
 			<ToggleSection section="Profile">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold">
+						<h2 className="mb-2 text-center cursor-pointer font-bold text-seaShell">
 							Profile
 						</h2>
 						{openSection === "Profile" && (

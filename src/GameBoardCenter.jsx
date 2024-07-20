@@ -63,7 +63,7 @@ function GameBoardCenter({ isFlipped, backContent }) {
 					/>
 				</div>
 
-				<div className="bg-shirtBlue text-white flip-card-back rounded-2xl shadow-custom">
+				<div className="bg-shirtBlue text-seaShell flip-card-back rounded-2xl shadow-custom">
 					{content}
 				</div>
 			</div>
