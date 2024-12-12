@@ -272,13 +272,17 @@ function WhatCanIEat() {
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">What I did next</h2>
 						{openSection === "What I did next" && (
 							<>
-								<p>
-									After completing the project, I continued to work on my coding
-									skills. I took part in coding challenges and worked on personal
-									projects. I also attended coding meetups and workshops to
-									expand my knowledge. I also started to learn new programming
-									languages and frameworks to further my career as a developer.
-								</p>
+								<ul className="list-disc list-inside">
+									<li className="mb-2">Developed a front-end heavy implementation of the board game Jaipur using Rails.</li>
+									<li className="mb-2">Created apps to solve real-world problems.</li>
+									<li className="mb-2">Experimented with Rails and WebSockets in the Jaipur project.</li>
+									<li className="mb-2">Enhanced teamwork skills by volunteering on a mobile app for Autistic learners.</li>
+									<li className="mb-2">Maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
+									<li className="mb-2">Explored Python, JavaScript, and Java, appreciating Ruby's simplicity while becoming more language agnostic.</li>
+									<li className="mb-2">Expanded knowledge in web scraping, API integration, and automation.</li>
+									<li className="mb-2">Developed a LinkedIn job application automation tool.</li>
+									<li className="mb-2">Improved efficiency for a band by scraping contact lists from a site without an API, generating mail lists for clients.</li>
+								</ul>
 							</>
 						)}
 					</>
