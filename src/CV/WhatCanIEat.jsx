@@ -148,20 +148,26 @@ function WhatCanIEat() {
 					<>
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Challenges</h2>
 						{openSection === "Challenges" && (
-							<p>
-								Finding an appropriate API was a challenge. The Spoonacular API
-								was chosen because it was free and had a good range of recipes.
-								The API was also easy to use and had good documentation. The API
-								was used to seed the app with data. The data was stored in JSON
-								files and then imported into the database. The biggest challenge
-								was the full-text search functionality. I had to research and
-								implement the pg_search gem. This was a challenge because it was
-								the first time I had used this gem. After researching the
-								different options, I decided that pg_search was going to be the
-								quickest and most lightweight option to implement. The app could
-								be further improved by sourcing better recipes and improving the
-								front-end to make it fully responsive.
-							</p>
+							<ul className="list-disc list-inside">
+								<li className="mb-2">
+									Finding an appropriate API was a challenge. The Spoonacular API was chosen because it was free and had a good range of recipes.
+								</li>
+								<li className="mb-2">
+									The API was also easy to use and had good documentation.
+								</li>
+								<li className="mb-2">
+									The API was used to seed the app with data. The data was stored in JSON files and then imported into the database.
+								</li>
+								<li className="mb-2">
+									The biggest challenge was the full-text search functionality. I had to research and implement the pg_search gem. This was a challenge because it was the first time I had used this gem.
+								</li>
+								<li className="mb-2">
+									After researching the different options, I decided that pg_search was going to be the quickest and most lightweight option to implement.
+								</li>
+								<li className="mb-2">
+									The app could be further improved by sourcing better recipes and improving the front-end to make it fully responsive.
+								</li>
+							</ul>
 						)}
 					</>
 				)}
