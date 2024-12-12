@@ -255,7 +255,12 @@ function WhatCanIEat() {
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Things I am personally proud of</h2>
 						{openSection === "Things I am personally proud of" && (
 							<ul className="list-disc list-inside">
-								<li className="mb-2">[Add your personal achievements here]</li>
+								<li className="mb-2">The social aspect of the app.</li>
+								<li className="mb-2">The full-text search functionality.</li>
+								<li className="mb-2">The team bond we formed.</li>
+								<li className="mb-2">The MVP we created.</li>
+								<li className="mb-2">My contributions to fixing bugs and implementing new features.</li>
+								<li className="mb-2">The coding and teamwork skills I developed</li>
 							</ul>
 						)}
 					</>
