@@ -284,7 +284,6 @@ function WhatCanIEat() {
 						{openSection === "Things I am personally proud of" && (
 							<ul className="list-disc list-inside">
 								<li className="mb-2">[Add your personal achievements here]</li>
-								<!-- Add more list items as needed -->
 							</ul>
 						)}
 					</>
