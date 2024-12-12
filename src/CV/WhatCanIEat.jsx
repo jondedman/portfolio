@@ -280,8 +280,10 @@ function WhatCanIEat() {
 									<li className="mb-2">Enhanced teamwork skills by volunteering on a mobile app for Autistic learners.</li>
 									<li className="mb-2">Maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
 									<li className="mb-2">Explored Python, JavaScript, and Java, appreciating Ruby's simplicity while becoming more language agnostic.</li>
+									<li className="mb-2">Optimised Python project for QMU</li>
+									<li className="mb-2">Developed a web scraper for a band's contact list</li>
 									<li className="mb-2">Expanded knowledge in web scraping, API integration, and automation.</li>
-									<li className="mb-2">Developed a LinkedIn job application automation tool.</li>
+									<li className="mb-2">Developed several websites including this portfolio site and a site for JIVE spin-out group at QMU</li>
 									<li className="mb-2">Improved efficiency for a band by scraping contact lists from a site without an API, generating mail lists for clients.</li>
 								</ul>
 							</>
