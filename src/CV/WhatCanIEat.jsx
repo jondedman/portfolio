@@ -191,20 +191,17 @@ function WhatCanIEat() {
 					<>
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Success?</h2>
 						{openSection === "Success?" && (
-							<p>
-								The project was a success because it met the requirements of the
-								brief. The app was built in Ruby on Rails and deployed to Heroku.
-								The app was built in a week and was a collaborative effort. The
-								app was built using the Spoonacular API and the pg_search gem. The
-								app was built using the Bootstrap framework. The app was built to
-								help users make use of leftover ingredients in their fridge. The
-								app was built to allow users to search for recipes based on the
-								ingredients they have. The app was built to allow users to save
-								recipes to their profile. The app was built to allow users to see
-								the contents of each other’s pantries and fridges. The app was
-								built to allow users to meet in chatrooms to discuss what they
-								could cook together.
-							</p>
+							<ul className="list-disc list-inside">
+								<li className="mb-2">Overall, the project was a success.</li>
+								<li className="mb-2">The design and look of the app could definitely have been better.</li>
+								<li className="mb-2">I sometimes felt the team could have been better organized.</li>
+								<li className="mb-2">
+									But we formed a strong team bond. And our sense of fun and camaraderie meant we were able to work through problems together.
+								</li>
+								<li className="mb-2">
+									I felt the social element of our app really was a USP and tied everything together. Having full-text search plus chat functionality made the app unique and interesting.
+								</li>
+							</ul>
 						)}
 					</>
 				)}
