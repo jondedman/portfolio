@@ -274,7 +274,8 @@ function WhatCanIEat() {
 							<>
 								<ul className="list-disc list-inside">
 									<li className="mb-2">Developed a front-end heavy implementation of the board game Jaipur using Rails.</li>
-									<li className="mb-2">Created apps to solve real-world problems.</li>
+									<li className="mb-2">Learned React and Tailwind</li>
+									<li className="mb-2">Created a booking system for RD Autos using the PERN stack.</li>
 									<li className="mb-2">Experimented with Rails and WebSockets in the Jaipur project.</li>
 									<li className="mb-2">Enhanced teamwork skills by volunteering on a mobile app for Autistic learners.</li>
 									<li className="mb-2">Maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
