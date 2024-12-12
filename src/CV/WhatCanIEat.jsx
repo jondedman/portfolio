@@ -116,7 +116,7 @@ function WhatCanIEat() {
 									Contributed to the front-end design of the recipe show pages.
 								</li>
 								<li className="mb-2">
-									Researched and implemented full-text search functionality using the pg_search gem.
+									Researched and implemented full-text search functionality using the pgSearch gem.
 								</li>
 							</ul>
 						)}
