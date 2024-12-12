@@ -212,35 +212,7 @@ function WhatCanIEat() {
 					</>
 				)}
 			</ToggleSection>
-			<ToggleSection section="What I learned">
-				{(openSection) => (
-					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">What I learned</h2>
-						{openSection === "What I learned" && (
-							<>
-								<ul className="list-disc list-inside">
-									<li className="mb-2">
-										How to build a full-stack web application using Ruby on Rails.
-									</li>
-									<li className="mb-2">
-										How to integrate an API into a Rails application.
-									</li>
-									<li className="mb-2">
-										How to use the pg_search gem to implement full-text search
-										functionality.
-									</li>
-									<li className="mb-2">
-										How to use the Bootstrap framework to style a Rails application.
-									</li>
-									<li className="mb-2">
-										How to deploy a Rails application to Heroku.
-									</li>
-								</ul>
-							</>
-						)}
-					</>
-				)}
-			</ToggleSection>
+
 			<ToggleSection section="What I learned from working on the project">
 				{(openSection) => (
 					<>
