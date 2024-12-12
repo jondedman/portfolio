@@ -100,18 +100,25 @@ function WhatCanIEat() {
 					</>
 				)}
 			</ToggleSection>
-			<ToggleSection section="Responsibilities">
+			<ToggleSection section="My contributions">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Responsibilities</h2>
-						{openSection === "Responsibilities" && (
-							<p>
-								Integrated the Spoonacular API to seed the app with data and
-								create a Minimum Viable Product (MVP). Contributed to the
-								front-end design of the recipe show pages. Researched and
-								implemented full-text search functionality using the pg_search
-								gem.
-							</p>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">My Contributions</h2>
+						{openSection === "My contributions" && (
+							<ul className="list-disc list-inside">
+								<li className="mb-2">
+									Integrated the Spoonacular API to seed the app with data and create a Minimum Viable Product (MVP).
+								</li>
+								<li className="mb-2">
+									concieved the social aspect of the app, allowing users to see each other's pantries and fridges, and meet in chatrooms to discuss what they could cook together.
+								</li>
+								<li className="mb-2">
+									Contributed to the front-end design of the recipe show pages.
+								</li>
+								<li className="mb-2">
+									Researched and implemented full-text search functionality using the pg_search gem.
+								</li>
+							</ul>
 						)}
 					</>
 				)}
