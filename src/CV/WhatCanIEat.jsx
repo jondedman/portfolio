@@ -332,7 +332,7 @@ end`}
 								<li className="mb-2">The design and look of the app could definitely have been better.</li>
 								<li className="mb-2">I sometimes felt the team could have been better organized.</li>
 								<li className="mb-2">
-									But we formed a strong team bond. And our sense of fun and camaraderie meant we were able to work through problems together.
+									We formed a strong team bond. And our sense of fun and camaraderie meant we were able to work through problems together.
 								</li>
 								<li className="mb-2">
 									I felt the social element of our app really was a USP and tied everything together. Having full-text search plus chat functionality made the app unique and interesting.
@@ -411,7 +411,6 @@ end`}
 									<li className="mb-2">Maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
 									<li className="mb-2">Explored Python, JavaScript, and Java, appreciating Ruby's simplicity while becoming more language agnostic.</li>
 									<li className="mb-2">Optimised Python project for QMU</li>
-									<li className="mb-2">Developed a web scraper for a band's contact list</li>
 									<li className="mb-2">Expanded knowledge in web scraping, API integration, and automation.</li>
 									<li className="mb-2">Developed several websites including this portfolio site and a site for JIVE spin-out group at QMU</li>
 									<li className="mb-2">Improved efficiency for a band by scraping contact lists from a site without an API, generating mail lists for clients.</li>
