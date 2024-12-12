@@ -128,16 +128,16 @@ function WhatCanIEat() {
 					<>
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Stack used</h2>
 						{openSection === "Stack used" && (
-							<ul>
-								<li>Ruby on Rails</li>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>JavaScript</li>
-								<li>PostgreSQL</li>
-								<li>Heroku</li>
-								<li>Spoonacular API</li>
-								<li>pg_search gem</li>
-								<li>Bootstrap</li>
+							<ul className="list-disc list-inside">
+								<li className="mb-2">Ruby on Rails</li>
+								<li className="mb-2">HTML</li>
+								<li className="mb-2">CSS</li>
+								<li className="mb-2">JavaScript</li>
+								<li className="mb-2">PostgreSQL</li>
+								<li className="mb-2">Heroku</li>
+								<li className="mb-2">Spoonacular API</li>
+								<li className="mb-2">pg_search gem</li>
+								<li className="mb-2">Bootstrap</li>
 							</ul>
 						)}
 					</>
