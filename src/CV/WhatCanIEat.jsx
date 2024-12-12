@@ -19,7 +19,7 @@ function WhatCanIEat() {
 					rel="noreferrer"
 					className="active:text-skyBlue font-bold sm:text-md md:text-lg lg:text-xl text-seaShell"
 				>
-					What Can I Eat!?
+					What Can I Eat!? - Presentation for CoverageBook
 					<svg
 						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse hover:text-skyBlue transition-all duration-300 ease-in-out"
 						xmlns="http://www.w3.org/2000/svg"
@@ -162,6 +162,115 @@ function WhatCanIEat() {
 								be further improved by sourcing better recipes and improving the
 								front-end to make it fully responsive.
 							</p>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Implementing Full-Text Search">
+				{(openSection) => (
+					<>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Implementing Full-Text Search</h2>
+						{openSection === "Implementing Full-Text Search" && (
+							<>
+								<p>
+									To implement full-text search, the pg_search gem was used. The
+									gem was added to the Gemfile and then installed. The gem was
+									then added to the model that needed to be searched. The
+									full-text search was then implemented in the controller. The
+									search query was passed to the model and the results were
+									returned. The results were then displayed on the page. The
+									search functionality was tested and then deployed to Heroku.
+								</p>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="Success?">
+				{(openSection) => (
+					<>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Success?</h2>
+						{openSection === "Success?" && (
+							<p>
+								The project was a success because it met the requirements of the
+								brief. The app was built in Ruby on Rails and deployed to Heroku.
+								The app was built in a week and was a collaborative effort. The
+								app was built using the Spoonacular API and the pg_search gem. The
+								app was built using the Bootstrap framework. The app was built to
+								help users make use of leftover ingredients in their fridge. The
+								app was built to allow users to search for recipes based on the
+								ingredients they have. The app was built to allow users to save
+								recipes to their profile. The app was built to allow users to see
+								the contents of each other’s pantries and fridges. The app was
+								built to allow users to meet in chatrooms to discuss what they
+								could cook together.
+							</p>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="What I learned">
+				{(openSection) => (
+					<>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">What I learned</h2>
+						{openSection === "What I learned" && (
+							<>
+								<ul className="list-disc list-inside">
+									<li className="mb-2">
+										How to build a full-stack web application using Ruby on Rails.
+									</li>
+									<li className="mb-2">
+										How to integrate an API into a Rails application.
+									</li>
+									<li className="mb-2">
+										How to use the pg_search gem to implement full-text search
+										functionality.
+									</li>
+									<li className="mb-2">
+										How to use the Bootstrap framework to style a Rails application.
+									</li>
+									<li className="mb-2">
+										How to deploy a Rails application to Heroku.
+									</li>
+								</ul>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="What I would do differently">
+				{(openSection) => (
+					<>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">What I would do differently</h2>
+						{openSection === "What I would do differently" && (
+							<>
+								<ul className="list-disc list-inside">
+									<li className="mb-2">
+										Source better recipes for the app.
+									</li>
+									<li className="mb-2">
+										Improve the front-end to make it fully responsive.
+									</li>
+								</ul>
+							</>
+						)}
+					</>
+				)}
+			</ToggleSection>
+			<ToggleSection section="What I did next">
+				{(openSection) => (
+					<>
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">What I did next</h2>
+						{openSection === "What I did next" && (
+							<>
+								<p>
+									After completing the project, I continued to work on my coding
+									skills. I took part in coding challenges and worked on personal
+									projects. I also attended coding meetups and workshops to
+									expand my knowledge. I also started to learn new programming
+									languages and frameworks to further my career as a developer.
+								</p>
+							</>
 						)}
 					</>
 				)}
