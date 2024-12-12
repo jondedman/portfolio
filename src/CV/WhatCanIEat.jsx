@@ -110,13 +110,13 @@ function WhatCanIEat() {
 									Integrated the Spoonacular API to seed the app with data and create a Minimum Viable Product (MVP).
 								</li>
 								<li className="mb-2">
-									concieved the social aspect of the app, allowing users to see each other's pantries and fridges, and meet in chatrooms to discuss what they could cook together.
+									Concieved the social aspect of the app, allowing users to see each other's pantries and fridges, and meet in chatrooms to discuss what they could cook together.
 								</li>
 								<li className="mb-2">
 									Contributed to the front-end design of the recipe show pages.
 								</li>
 								<li className="mb-2">
-									Researched and implemented full-text search functionality using the pgSearch gem.
+									Researched and implemented full-text search functionality using the pg_search gem.
 								</li>
 							</ul>
 						)}
@@ -136,7 +136,7 @@ function WhatCanIEat() {
 								<li className="mb-2">PostgreSQL</li>
 								<li className="mb-2">Heroku</li>
 								<li className="mb-2">Spoonacular API</li>
-								<li className="mb-2">pg_search gem</li>
+								<li className="mb-2">Pg_search</li>
 								<li className="mb-2">Bootstrap</li>
 							</ul>
 						)}
@@ -150,22 +150,13 @@ function WhatCanIEat() {
 						{openSection === "Challenges" && (
 							<ul className="list-disc list-inside">
 								<li className="mb-2">
-									Finding an appropriate API was a challenge. The Spoonacular API was chosen because it was free and had a good range of recipes.
+									Finding an appropriate API was a challenge. The Spoonacular API was chosen because it was free and had a good range of recipes. The API was also easy to use and had good documentation.
 								</li>
 								<li className="mb-2">
-									The API was also easy to use and had good documentation.
+									The API was used to seed the app with data. The data was stored in JSON files and then imported into the database. We did it this way because we did not want to make too many API calls.
 								</li>
 								<li className="mb-2">
-									The API was used to seed the app with data. The data was stored in JSON files and then imported into the database.
-								</li>
-								<li className="mb-2">
-									The biggest challenge was the full-text search functionality. I had to research and implement the pg_search gem. This was a challenge because it was the first time I had used this gem.
-								</li>
-								<li className="mb-2">
-									After researching the different options, I decided that pg_search was going to be the quickest and most lightweight option to implement.
-								</li>
-								<li className="mb-2">
-									The app could be further improved by sourcing better recipes and improving the front-end to make it fully responsive.
+									The biggest challenge for me was the full-text search functionality. I initially tried to implement this from scratch, which was too lengthy a proceedure and too complicated. I then researched different options and decided that pg_search was going to be the quickest and most lightweight option to implement.
 								</li>
 							</ul>
 						)}
@@ -210,7 +201,7 @@ function WhatCanIEat() {
 	validates :title, uniqueness: true, presence: true
 	validates :instructions, :total_time, :serving_size, :image_url, presence: true
 
-	# Include PgSearch to enable search functionality
+	# Include Pg_search to enable search functionality
 	include PgSearch::Model
 
 	# Define the search scope
@@ -334,6 +325,10 @@ end`}
 						{openSection === "Success?" && (
 							<ul className="list-disc list-inside">
 								<li className="mb-2">Overall, the project was a success.</li>
+								<li className="mb-2">We created a Minimum Viable Product (MVP) that showcased our skills and creativity.</li>
+								<li className="mb-2">
+									The app could be further improved by sourcing better recipes and improving the front-end to make it fully responsive.
+								</li>
 								<li className="mb-2">The design and look of the app could definitely have been better.</li>
 								<li className="mb-2">I sometimes felt the team could have been better organized.</li>
 								<li className="mb-2">
