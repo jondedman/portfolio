@@ -178,14 +178,88 @@ function WhatCanIEat() {
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Implementing Full-Text Search</h2>
 						{openSection === "Implementing Full-Text Search" && (
 							<>
-								<p>
-									To implement full-text search, the pg_search gem was used. The
-									gem was added to the Gemfile and then installed. The gem was
-									then added to the model that needed to be searched. The
-									full-text search was then implemented in the controller. The
-									search query was passed to the model and the results were
-									returned. The results were then displayed on the page. The
-									search functionality was tested and then deployed to Heroku.
+								<h3 className="mb-2 font-semibold">What was the setup process and research?</h3>
+								<ul className="list-disc list-inside mb-4">
+									<li className="mb-2">Researched various full-text search solutions and chose the pg_search gem for its simplicity and effectiveness.</li>
+									<li className="mb-2">Added the pg_search gem to the Gemfile and installed it.</li>
+									<li className="mb-2">Reviewed the documentation and examples to understand its implementation.</li>
+								</ul>
+
+								<h4 className="mb-2 font-semibold">Key takeaways</h4>
+								<ul className="list-disc list-inside mb-4">
+									<li className="mb-2">The importance of choosing the right tool for the job.</li>
+									<li className="mb-2">Understanding the documentation is crucial for successful implementation.</li>
+								</ul>
+
+								<h3 className="mb-2 font-semibold">User journey</h3>
+								<p className="mb-4">
+									The user can enter a search query in the search bar, and the application will return relevant results based on the full-text search implementation.
+								</p>
+
+								<h3 className="mb-2 font-semibold">How was the gem implemented?</h3>
+								<ul className="list-disc list-inside mb-4">
+									<li className="mb-2">Added the pg_search gem to the Gemfile and installed it.</li>
+									<pre className="bg-gray-100 p-2 rounded mb-4">
+										<code>
+											{`gem 'pg_search'`}
+										</code>
+									</pre>
+									<li className="mb-2">Configured the model to use pg_search for full-text search.</li>
+									<pre className="bg-gray-100 p-2 rounded mb-4">
+										<code>
+											{`class Recipe < ApplicationRecord
+				include PgSearch::Model
+				pg_search_scope :search_by_title_and_description,
+												against: [:title, :description],
+												using: {
+													tsearch: { prefix: true }
+												}
+			end`}
+										</code>
+									</pre>
+									<li className="mb-2">Implemented the search functionality in the controller.</li>
+									<pre className="bg-gray-100 p-2 rounded mb-4">
+										<code>
+											{`class RecipesController < ApplicationController
+				def index
+					if params[:query].present?
+						@recipes = Recipe.search_by_title_and_description(params[:query])
+					else
+						@recipes = Recipe.all
+					end
+				end
+			end`}
+										</code>
+									</pre>
+									<li className="mb-2">Displayed the search results in the view.</li>
+									<pre className="bg-gray-100 p-2 rounded mb-4">
+										<code>
+											{`<% @recipes.each do |recipe| %>
+				<div>
+					<h2><%= recipe.title %></h2>
+					<p><%= recipe.description %></p>
+				</div>
+			<% end %>`}
+										</code>
+									</pre>
+								</ul>
+
+								<h4 className="mb-2 font-semibold">Key takeaways</h4>
+								<ul className="list-disc list-inside mb-4">
+									<li className="mb-2">The gem simplifies the implementation of full-text search.</li>
+									<li className="mb-2">Proper configuration and testing are essential for accurate search results.</li>
+								</ul>
+
+								<h3 className="mb-2 font-semibold">Different areas of the codebase that needed updating to use full-text search implementation</h3>
+								<ul className="list-disc list-inside mb-4">
+									<li className="mb-2">Model</li>
+									<li className="mb-2">Controller</li>
+									<li className="mb-2">View</li>
+								</ul>
+
+								<h3 className="mb-2 font-semibold">Flow through the application</h3>
+								<p className="mb-4">
+									The user enters a search query, the query is processed by the controller, the pg_search gem performs the search in the model, and the results are displayed in the view.
 								</p>
 							</>
 						)}
