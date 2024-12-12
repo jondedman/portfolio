@@ -178,88 +178,149 @@ function WhatCanIEat() {
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Implementing Full-Text Search</h2>
 						{openSection === "Implementing Full-Text Search" && (
 							<>
-								<h3 className="mb-2 font-semibold">What was the setup process and research?</h3>
+
+							<h3 className="mb-2 font-semibold">User journey</h3>
+								<p className="mb-4">
+									The user can enter a search query in the search bar, and the application will return relevant results based on the full-text search implementation.
+								</p>
+								<h3 className="mb-2 font-semibold">First steps</h3>
 								<ul className="list-disc list-inside mb-4">
-									<li className="mb-2">Researched various full-text search solutions and chose the pg_search gem for its simplicity and effectiveness.</li>
-									<li className="mb-2">Added the pg_search gem to the Gemfile and installed it.</li>
-									<li className="mb-2">Reviewed the documentation and examples to understand its implementation.</li>
+									<li className="mb-2">After trying to code it from scratch, researched various full-text search solutions and chose the pg_search gem for its simplicity and effectiveness.</li>
 								</ul>
 
 								<h4 className="mb-2 font-semibold">Key takeaways</h4>
 								<ul className="list-disc list-inside mb-4">
 									<li className="mb-2">The importance of choosing the right tool for the job.</li>
-									<li className="mb-2">Understanding the documentation is crucial for successful implementation.</li>
+									<li className="mb-2">Don't re-invent the wheel.</li>
 								</ul>
-
-								<h3 className="mb-2 font-semibold">User journey</h3>
-								<p className="mb-4">
-									The user can enter a search query in the search bar, and the application will return relevant results based on the full-text search implementation.
-								</p>
 
 								<h3 className="mb-2 font-semibold">How was the gem implemented?</h3>
 								<ul className="list-disc list-inside mb-4">
 									<li className="mb-2">Added the pg_search gem to the Gemfile and installed it.</li>
-									<pre className="bg-gray-100 p-2 rounded mb-4">
-										<code>
-											{`gem 'pg_search'`}
-										</code>
-									</pre>
-									<li className="mb-2">Configured the model to use pg_search for full-text search.</li>
-									<pre className="bg-gray-100 p-2 rounded mb-4">
+									<li className="mb-2">Configured the recipe model to use pg_search for full-text search.</li>
+									<pre className="bg-gray-100 p-4 rounded m-4 whitespace-pre-wrap text-left">
 										<code>
 											{`class Recipe < ApplicationRecord
-				include PgSearch::Model
-				pg_search_scope :search_by_title_and_description,
-												against: [:title, :description],
-												using: {
-													tsearch: { prefix: true }
-												}
-			end`}
+	has_many :reviews, dependent: :destroy
+	has_many :bookmarks, dependent: :destroy
+	has_many :recipe_ingredients, dependent: :destroy
+	has_many :ingredients, through: :recipe_ingredients
+	has_many :steps, dependent: :destroy
+
+	validates :title, uniqueness: true, presence: true
+	validates :instructions, :total_time, :serving_size, :image_url, presence: true
+
+	# Include PgSearch to enable search functionality
+	include PgSearch::Model
+
+	# Define the search scope
+	# The search scope will search the title and instructions columns
+	# using the tsearch prefix search method
+	pg_search_scope :search_recipes,
+	against: %i[title instructions],
+	using: { tsearch: { prefix: true } }
+
+	# Define the search scope for ordering recipes by average rating
+	scope :order_by_average_rating_asc, -> { order(:average_rating) }
+	scope :order_by_average_rating_desc, -> { order(average_rating: :desc) }
+
+	# method to update the average rating of a recipe
+	def update_average_rating
+		update(average_rating: reviews.average(:rating))
+	end
+end`}
 										</code>
 									</pre>
-									<li className="mb-2">Implemented the search functionality in the controller.</li>
-									<pre className="bg-gray-100 p-2 rounded mb-4">
+									<li className="mb-2">Implemented the search functionality in the recipe controller.</li>
+									<pre className="bg-gray-100 p-4 rounded m-4 whitespace-pre-wrap text-left">
 										<code>
 											{`class RecipesController < ApplicationController
-				def index
-					if params[:query].present?
-						@recipes = Recipe.search_by_title_and_description(params[:query])
-					else
-						@recipes = Recipe.all
-					end
-				end
-			end`}
+
+  # The index action handles different search scenarios and displays the search results accordingly.
+
+  def index
+    if params[:query].present?
+      # If a query is present, search wth or without an ingredient_id
+      params[:ingredient_id].present? ? search(params[:query], params[:ingredient_id]) : search(params[:query])
+
+    elsif params[:ingredient_id].present?
+      # If only an ingredient_id is present, search with an empty query
+      search("", params[:ingredient_id])
+
+    elsif params.values.include?("1") && params[:query].empty?
+      # if any filter parameter is set to "1" and the query is empty, search with an empty query
+      empty_query
+
+    else
+      # If no query or ingredient_id is present, display all recipes
+      @recipes = Recipe.where(id: popular_recipes_ids)
+    end
+  end
+
+  # The show action displays the details of a single recipe.
+  def show
+    @chatroom = Chatroom.first
+    @bookmark = Bookmark.new
+    @review = Review.new
+    @recipe = Recipe.find(params[:id])
+    @user_bookmarks = Bookmark.where(user: current_user)
+    @friendship = Friendship.new
+  end
+
+  private
+
+  # The search method is used to search for recipes based on the query and ingredient_id.
+  # It also filters the search results based on the selected filters.
+  def search(params_query, user_ingredient = "")
+    user_ingredient.map! { |id| Ingredient.find(id).name }.join(" ") if user_ingredient.length.positive?
+
+    if params.values.include?("1")
+      # If any filter parameter is set to "1", filter the search results based on the selected filters
+      arr = params.select { |_key, value| value == "1" }.keys
+      @recipes = Recipe.search_recipes("#{params_query} #{user_ingredient}").where(arr.to_h { |key| [key, true] })
+
+    else
+      # If no filter parameter is set to "1", display all search results
+      @recipes = Recipe.search_recipes("#{params_query} #{user_ingredient}")
+    end
+  end
+
+  # The empty_query method is used to search for recipes based on the selected filters when no query is present.
+  def empty_query
+    arr = params.select { |_key, value| value == "1" }.keys
+    @recipes = Recipe.where(arr.to_h { |key| [key, true] })
+  end
+
+  # The popular_recipes_ids method returns an array of recipe ids for popular recipes. This could be refactored to use a scope too.
+  def popular_recipes_ids
+    Recipe.where(title: "Easy Eggplant Curry").pluck(:id) +
+      Recipe.where(title: "Dolsot Bibimbap").pluck(:id) +
+      Recipe.where(title: "Smokey Rainbow Chili").pluck(:id) +
+      Recipe.where(title: "Vietnamese Pancakes with Vegetables, Herbs and a Fragrant Dipping Sauce (Bánh Xèo)").pluck(:id) +
+      Recipe.where(title: "Super Speedy Spicy Sweet and Sour Shrimp").pluck(:id) +
+      Recipe.where(title: "Spaghetti Squash & Tomato Basil Meat Sauce").pluck(:id) +
+      Recipe.where(title: "Caldo Verde - Portuguese Kale Soup").pluck(:id) +
+      Recipe.where(title: "Grilled Fish With Sun Dried Tomato Relish").pluck(:id)
+  end
+end`}
 										</code>
 									</pre>
 									<li className="mb-2">Displayed the search results in the view.</li>
 									<pre className="bg-gray-100 p-2 rounded mb-4">
 										<code>
-											{`<% @recipes.each do |recipe| %>
-				<div>
-					<h2><%= recipe.title %></h2>
-					<p><%= recipe.description %></p>
-				</div>
-			<% end %>`}
+											{`# Recipes are displayed according to the search results from the controller
+
+<% @recipes.each do |recipe| %>
+  <div class="w-full inline-block">
+		<%= render "shared/cards", recipe: recipe %>
+<% end %>
+  </div>`}
 										</code>
 									</pre>
 								</ul>
-
-								<h4 className="mb-2 font-semibold">Key takeaways</h4>
-								<ul className="list-disc list-inside mb-4">
-									<li className="mb-2">The gem simplifies the implementation of full-text search.</li>
-									<li className="mb-2">Proper configuration and testing are essential for accurate search results.</li>
-								</ul>
-
-								<h3 className="mb-2 font-semibold">Different areas of the codebase that needed updating to use full-text search implementation</h3>
-								<ul className="list-disc list-inside mb-4">
-									<li className="mb-2">Model</li>
-									<li className="mb-2">Controller</li>
-									<li className="mb-2">View</li>
-								</ul>
-
 								<h3 className="mb-2 font-semibold">Flow through the application</h3>
 								<p className="mb-4">
-									The user enters a search query, the query is processed by the controller, the pg_search gem performs the search in the model, and the results are displayed in the view.
+									The user enters a search query via a form in the index, the query is processed by the controller, the pg_search gem performs the search in the model, and the results are displayed in the view.
 								</p>
 							</>
 						)}
