@@ -47,8 +47,9 @@ function WhatCanIEat() {
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Brief</h2>
 						{openSection === "Brief" && (
 							<>
-								<p>
-									What can I eat!? was the final collaborative project with my
+							<ul className="list-disc list-inside">
+								<li className="mb-2">
+									What can I eat!? was the final collaborative project at Le Wagon bootcamp with my
 									wonderful friends{" "}
 									<a
 										href="https://github.com/fransan6"
@@ -76,24 +77,25 @@ function WhatCanIEat() {
 									>
 										Ilaria Peroni
 									</a>
-									. I have forked a copy of the original project from my github
-									repo. The original project was built over several months in
-									Ruby on Rails and then deployed to Heroku.
-								</p>
+								</li>
+								<li className="mb-2">
+								From concept to production, built in Ruby-on-Rails and deployed on Heroku.
+								</li>
 
-								<p>
-									What can I eat!? is a web application designed to help users
-									make use of leftover ingredients in their fridge. The app
-									allows users to search for recipes based on the ingredients
-									they have, and also lets them save recipes to their profile.
-									The goal was to create a visually appealing application that
-									provides a great user experience. Additionally, the app needed
-									to be deployed on Heroku. I proposed and implemented a social
-									aspect for the app, enabling users to see the contents of each
-									other’s pantries and fridges, and meet in chatrooms to discuss
-									what they could cook together.
-								</p>
+								<ul className="list-disc list-inside">
+									<li className="mb-2">
+										A full-stack web application designed to help users make use of leftover ingredients in their fridge.
+									</li>
+									<li className="mb-2">
+										Allows users to search for recipes based on the ingredients they have, and also lets them save recipes to their profile.
+									</li>
+									<li className="mb-2">
+										Users can see the contents of each other’s pantries and fridges, and meet in chatrooms to discuss what they could cook together.
+									</li>
+								</ul>
+							</ul>
 							</>
+
 						)}
 					</>
 				)}
