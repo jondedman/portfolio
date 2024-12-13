@@ -324,12 +324,17 @@ end`}
 						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Success?</h2>
 						{openSection === "Success?" && (
 							<ul className="list-disc list-inside">
-								<li className="mb-2">Overall, the project was a success.</li>
-								<li className="mb-2">We created a Minimum Viable Product (MVP) that showcased our skills and creativity.</li>
+								<li className="mb-2">Overall, as an MVP, the project was a success.</li>
 								<li className="mb-2">
 									The app could be further improved by sourcing better recipes and improving the front-end to make it fully responsive.
 								</li>
-								<li className="mb-2">The design and look of the app could definitely have been better.</li>
+								<li className="mb-2">
+									The app was not fully tested, beyond basic functionality for the demo. So, I would not consider it a complete product.
+								</li>
+								<li className="mb-2">
+									Some aspects of the code could be more robust, such as the filtering of search results.
+								</li>
+								<li className="mb-2">The look of the app could have been better.</li>
 								<li className="mb-2">I sometimes felt the team could have been better organized.</li>
 								<li className="mb-2">
 									We formed a strong team bond. And our sense of fun and camaraderie meant we were able to work through problems together.
@@ -353,7 +358,6 @@ end`}
 								<li className="mb-2">How to create an MVP for showcase.</li>
 								<li className="mb-2">Ways to boost morale in the team.</li>
 								<li className="mb-2">How to ask for help.</li>
-								<li className="mb-2">How to embrace different ways of working and adapt to a team to keep the stronger parts.</li>
 								<li className="mb-2">A solid understanding of the MVC design pattern.</li>
 								<li className="mb-2">An appreciation for how Rails abstracts a lot of the difficulty away from developing a project, especially when my first solo project used different software for the front and back end.</li>
 							</ul>
@@ -362,17 +366,16 @@ end`}
 				)}
 			</ToggleSection>
 
-			<ToggleSection section="Areas where I was weak and would have liked to contribute more">
+			<ToggleSection section="Areas for personal improvement">
 				{(openSection) => (
 					<>
-						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Areas where I was weak and would have liked to contribute more</h2>
-						{openSection === "Areas where I was weak and would have liked to contribute more" && (
+						<h2 className="mb-2 text-center cursor-pointer font-bold hover:text-skyBlue">Areas for personal improvement</h2>
+						{openSection === "Areas for personal improvement" && (
 							<ul className="list-disc list-inside">
 								<li className="mb-2">Front end - my work here was not as extensive. I helped with the layout but was not very hands-on with the design.</li>
 								<li className="mb-2">My OTT buttons were shot down.</li>
 								<li className="mb-2">Working on improving my front-end sensibilities.</li>
 								<li className="mb-2">I felt in our group my code reviews could have been better.</li>
-								<li className="mb-2">I would like to have spoken up more. The code reviews were more of a tick box exercise for our group. I would like to have changed that more.</li>
 							</ul>
 						)}
 					</>
