@@ -411,7 +411,7 @@ end`}
 									<li className="mb-2">Created a booking system for RD Autos using the PERN stack.</li>
 									<li className="mb-2">Experimented with Rails and WebSockets in the Jaipur project.</li>
 									<li className="mb-2">Enhanced teamwork skills by volunteering on a mobile app for Autistic learners.</li>
-									<li className="mb-2">Maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
+									<li className="mb-2"> On the same app, maintained stability by fixing breaking versions of the app, despite being a junior team member.</li>
 									<li className="mb-2">Explored Python, JavaScript, and Java, appreciating Ruby's simplicity while becoming more language agnostic.</li>
 									<li className="mb-2">Optimised Python project for QMU</li>
 									<li className="mb-2">Expanded knowledge in web scraping, API integration, and automation.</li>
