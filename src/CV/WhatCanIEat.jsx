@@ -19,7 +19,7 @@ function WhatCanIEat() {
 					rel="noreferrer"
 					className="active:text-skyBlue font-bold sm:text-md md:text-lg lg:text-xl text-seaShell"
 				>
-					What Can I Eat!? - Presentation for CoverageBook
+					What Can I Eat!?
 					<svg
 						className="h-6 w-6 inline-block ml-4 mb-2 animate-pulse hover:text-skyBlue transition-all duration-300 ease-in-out"
 						xmlns="http://www.w3.org/2000/svg"
@@ -33,14 +33,14 @@ function WhatCanIEat() {
 				</a>{" "}
 			</div>
 
-			{/* <a
+			<a
 				className="text-white underline"
-				href="http://www.whatcanieat.world"
+				href="https://whatcanieat-f8481b930d31.herokuapp.com"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
 				What Can I Eat!? - see it live on Heroku
-			</a> */}
+			</a>
 			<ToggleSection section="Brief">
 				{(openSection) => (
 					<>
