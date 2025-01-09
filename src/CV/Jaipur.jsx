@@ -36,7 +36,7 @@ function Jaipur() {
 			</div>
 			<h2 className="text-bold my-4">
 				<a
-					href="https://jaipur-987f936505cd.herokuapp.com"
+					href="https://jaipur-d34e54923434.herokuapp.com"
 					target="blank"
 					rel="noreferrer"
 					className="active:text-blue active:font-bold text-seaShell hover:text-skyBlue transition-all duration-300 ease-in-out"
